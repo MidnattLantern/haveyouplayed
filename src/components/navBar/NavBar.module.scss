@@ -1,5 +1,66 @@
-.test__test {
-    border: 1px solid var(--color-secondary);
+@keyframes pulse-focus {
+    0% {border-color: var(--color-primary);}
+    50% {border-color: var(--color-secondary);}
+    100% {border-color: var(--color-primary);}
+}
+
+@keyframes nav-slide-in {
+    from {left: -100vw}
+    to {left: 0;}
+}
+
+@keyframes nav-slide-out {
+    from {left: 0}
+    to {left: -100vw;}
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    padding: 10px;
+    padding-left: 0;
+    gap: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    border: 1px solid red;
+
+    nav {
+        position: absolute;
+        bottom: 90px;
+        border: 2px dotted var(--color-body-transparent);
+        border-left: none;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: calc(100% - 10px);
+        min-height: fit-content;
+        height: 300px;
+        gap: 1rem;
+        pointer-events: all;
+
+        a {
+            width: 100%;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 600;
+            text-decoration: none;
+        }
+    }
+    nav:focus-within {
+        left: 0;
+        animation: nav-slide-in 0.5s;
+        pointer-events: all;
+    }
+}
+
+.containerNoEvents {
+    pointer-events: none;
 }
 
 .logoA11y {
@@ -10,4 +71,61 @@
     padding: 0;
     overflow: hidden;
     white-space: nowrap;
+}
+
+.toggleNavBarButton {
+    border-radius: 0;
+    border-top-right-radius: var(--pillify);
+    border-bottom-right-radius: var(--pillify);
+    background-color: var(--color-surface-transparent);
+    border: 2px solid var(--color-body-transparent);
+    border-left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 220px;
+    height: 70px;
+    transition: all 0.2s ease;
+    pointer-events: all;
+
+    h1 {
+        height: 30px;
+        margin-left: 30px;
+    }
+}
+
+.toggleNavBarButton:hover {
+    // border-color: var(--color-primary);
+    animation: pulse-focus 5s infinite;
+    cursor: pointer;
+}
+
+.expandedNavBarButton {
+    width: 100%;
+}
+
+.roundArrow {
+    fill: var(--color-body);
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+    transition: all 0.2s ease;
+}
+
+.roundArrowLeft {
+    transform: rotate(180deg);
+    fill: var(--color-primary);
+}
+
+.navIsVisible {
+    left: 0;
+    animation: nav-slide-in 0.5s;
+    pointer-events: all;
+    border: 1px solid blue;
+}
+
+.navIsHidden {
+    left: -100vw;
+    animation: nav-slide-out 0.5s;
+    border: 1px solid red;
 }

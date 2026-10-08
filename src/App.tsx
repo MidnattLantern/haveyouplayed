@@ -7,9 +7,7 @@ function App() {
 
   return (
     <>
-      <header>
-        <NavBar/>
-      </header>
+      <NavBar/>
       <main className={Styles.test__test}>
         <div id='home-about'>
           <HomeAbout/>
@@ -20,6 +18,7 @@ function App() {
         <div id='suggest'>
           <Suggest/>
         </div>
+        <button>Click me</button>
       </main>
       <footer>
 

@@ -42,7 +42,7 @@ NOTE: Changes from initial wireframe to final product may vary. This project doe
 
 ## Codebase architecture
 ### Components
-The architecture takes advantage of React's component-based JSX features. The three "mothership" components: header, main, and footer live as seperate entities.
+The architecture takes advantage of React's component-based JSX features.
 
 ### SCSS modules
 By utulizing .module for scss documents, each component and its class-names can be truly unique, meaning multiple components could have ".container" without overlapping each other. Note that .module files shouldn't use element selectors, such as "span" or "article", use class-names instead. Universal element selectors and variables should be specified in index.scss. Colors and fonts should always use variables going back to index.scss.

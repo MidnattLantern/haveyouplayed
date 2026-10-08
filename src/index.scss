@@ -1,10 +1,14 @@
 * {
   --color-surface: rgb(20, 20, 20);
+  --color-surface-transparent: rgba(20, 20, 20, 0.5);
   --color-body: rgb(200, 200, 200);
+  --color-body-transparent: rgba(200, 200, 200, 0.5);
   --color-primary: #FF46CE;
   --color-secondary: #FFEF3B;
 
   --font-theme: "Kanit", Roboto, sans-serif;
+
+  --pillify: 100vmax;
 
   box-sizing: border-box;
 }
