@@ -1,12 +1,21 @@
 * {
   --color-surface: rgb(20, 20, 20);
   --color-body: rgb(200, 200, 200);
+  --color-primary: #FF46CE;
+  --color-secondary: #FFEF3B;
 
-  --font-sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --font-theme: "Kanit", Roboto, sans-serif;
 
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
+  background: var(--color-surface);
+}
+
+p, span, a, h1, h2 {
+  color: var(--color-body);
+  font-family: var(--font-theme);
+  font-style: italic;
 }

@@ -1,11 +1,17 @@
 import Styles from './NavBar.module.scss'
+import Logo from '../../assets/haveyouplayed-logo.svg?react'
 
 function NavBar() {
 
     return (
         <>
             <nav className={Styles.test__test}>
-                <a href='#'><h1>Haveyouplayed</h1></a>
+                <h1>
+                    <a href='#'>
+                        <Logo aria-label="Have you played logo"/>
+                        <span className={Styles.logoA11y}>Have you played</span>
+                    </a>
+                </h1>
                 <a href='#home-about'>Home & About</a>
                 <a href='#library'>Library</a>
                 <a href='#suggest'>Suggest</a>
