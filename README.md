@@ -58,9 +58,16 @@ I remain committed to distancing myself from AI and LLMs by minimizing my use of
 
 ## Other notes
 ### SVG for React
-React read SVG:s a little differently from a vanilla Vite project. You need the svgr plugin. Guide how to install the plugin can be found here: [www.npmjs.com/package/vite-plugin-svgr](https://www.npmjs.com/package/vite-plugin-svgr). I don't know the techincal details, but to prevent SVG:s from crashing your app, simply add `?react` to the end of your import: `import logo from './logo.svg?react'`.
+React read SVG:s a little differently from a vanilla Vite project. You need the svgr plugin. Guide how to install the plugin can be found here: [www.npmjs.com/package/vite-plugin-svgr](https://www.npmjs.com/package/vite-plugin-svgr). Something the guide does not make super clear is that you must create a `vite-env.d.ts` file in /src with the contents:
+```TypeScript
+// src/vite-env.d.ts
+/// <reference types="vite/client" />
+/// <reference types="vite-plugin-svgr/client" />
+```
+ I don't know the techincal details, but to prevent SVG:s from crashing your app, simply add `?react` to the end of your import: `import logo from './logo.svg?react'`.
 
 ## Acknowledgements
 - How to deploy to Vercel: [vercel.com/kb/guide/deploying-react-with-vercel](https://vercel.com/kb/guide/deploying-react-with-vercel)
 - Kanit (font theme): [fonts.google.com/specimen/Kanit](https://fonts.google.com/specimen/Kanit)
 - How to add SVG support for React for Vite: [www.npmjs.com/package/vite-plugin-svgr](https://www.npmjs.com/package/vite-plugin-svgr)
+- SVG a11y tip: [stackoverflow.com/questions/57983591](https://stackoverflow.com/questions/57983591/firefox-a11y-audit-with-inline-svgs-content-with-images-must-be-labeled)

@@ -1,5 +1,5 @@
 import Styles from './NavBar.module.scss'
-import Logo from '../../assets/haveyouplayed-logo.svg?react'
+import Logo from "../../assets/haveyouplayed-logo.svg?react"
 
 function NavBar() {
 
