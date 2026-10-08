@@ -12,18 +12,18 @@ function NavBar() {
 
     function handleHideNavBar() {
         setShowNavBar(false)
-        // document.getElementById("")?.focus() // Specify element to focus for better UX
+        document.getElementById("navBarTabDestination")?.focus() // Specify element to focus for better UX for a11y
     }
 
     return (
         <>
             <header className={`${Styles.container} ${showNavBar ? undefined : Styles.containerNoEvents}`} onClick={showNavBar ? handleHideNavBar : undefined}>
-                <button onClick={handleToggleShowNavBar} className={`${Styles.toggleNavBarButton} ${showNavBar && Styles.expandedNavBarButton}`}>
+                <button onClick={handleToggleShowNavBar} className={`${Styles.toggleNavBarButton} ${showNavBar ? Styles.expandedNavBarButton : ""}`}>
                     <h1>
                         <Logo aria-label="Have you played logo"/>
                         <span className={Styles.logoA11y}>Have you played</span>
                     </h1>
-                    <RoundArrow className={`${Styles.roundArrow} ${showNavBar && Styles.roundArrowLeft}`}/>
+                    <RoundArrow className={`${Styles.roundArrow} ${showNavBar ? Styles.roundArrowLeft : ""}`}/>
                 </button>
                 <nav className={showNavBar ? Styles.navIsVisible : Styles.navIsHidden}>
                     <a href='#home-about'>Home & About</a>

@@ -26,7 +26,6 @@
     gap: 10px;
     display: flex;
     flex-direction: column-reverse;
-    border: 1px solid red;
 
     nav {
         position: absolute;
@@ -35,6 +34,8 @@
         border-left: none;
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
+        background-color: var(--color-surface-transparent);
+        backdrop-filter: blur(2px);
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -52,11 +53,11 @@
             text-decoration: none;
         }
     }
-    nav:focus-within {
-        left: 0;
-        animation: nav-slide-in 0.5s;
-        pointer-events: all;
-    }
+    // nav:focus-within {
+    //     left: 0;
+    //     animation: nav-slide-in 0.5s;
+    //     pointer-events: all;
+    // }
 }
 
 .containerNoEvents {
@@ -117,15 +118,49 @@
     fill: var(--color-primary);
 }
 
+.container nav:focus-within,
 .navIsVisible {
     left: 0;
     animation: nav-slide-in 0.5s;
     pointer-events: all;
-    border: 1px solid blue;
 }
 
 .navIsHidden {
     left: -100vw;
     animation: nav-slide-out 0.5s;
-    border: 1px solid red;
+}
+
+@media screen and (min-width: 1024px) {
+    .toggleNavBarButton {
+        pointer-events: none;
+        visibility: hidden;
+    }
+
+    .navIsHidden {
+        left: 0;
+        animation: nav-slide-in 0.5s;
+    }
+
+    .navIsVisible {
+        left: 0;
+        animation: nav-slide-in 0.5s;
+    }
+
+    .containerNoEvents {
+        pointer-events: none;
+    }
+
+    .container nav {
+        top: 0;
+        width: 200px;
+        height: 100%;
+        border-top: 0;
+        border-bottom: 0;
+        border-radius: 0;
+        pointer-events: all;
+
+        a {
+            font-size: 1.5rem;
+        }
+    }
 }

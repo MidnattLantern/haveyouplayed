@@ -10,9 +10,10 @@ Developed by Alma Isaksson 2026
 4. [Deployment](#deployment)
 5. [Wireframes](#wireframes)
 6. [Codebase architecture](#codebase-architecture)
-7. [AI disclosure](#ai-disclosure)
-8. [Other notes](#other-notes)
-9. [Acknowledgements](#acknowledgements)
+7. [Usestates](#usestates)
+8. [AI disclosure](#ai-disclosure)
+9. [Other notes](#other-notes)
+10. [Acknowledgements](#acknowledgements)
 
 ## About
 
@@ -41,6 +42,12 @@ Wireframes were done through Figma: [www.figma.com/design (haveyouplayed)](https
 NOTE: Changes from initial wireframe to final product may vary. This project does not make an orthodox commitment.
 
 ## Codebase architecture
+- [Components](#components)
+- [SCSS modules](#scss-modules)
+- [ID Navigation](#id-navigation)
+- [Naming files and directories](#naming-files-and-directories)
+- [Navbar](#navbar)
+
 ### Components
 The architecture takes advantage of React's component-based JSX features.
 
@@ -52,6 +59,25 @@ Any destination should live in App.tsx. This way, looking for the destination po
 
 ### Naming files and directories
 Directories use camelCase, files making up a component use PascalCase, and regular JS files use camelCase. SCSS files use the same name as its corresponding TSX file, with a .module addition. Exceptions are main.tsx and index.scss. SCSS class-names use camelCase, since modules break with dashes in JSX. Underscores still work though, and may be used for BEM:s, such as "wrapper__myCard".
+
+### NavBar
+The navigation-bar is adapted from the solution of one of my private projects: [Divines Of Idoria](https://midnattlantern.github.io/divinesofidoria/). It's a phone-first design.
+
+The link panel is shown or hidden, depending on a boolean's state: showNavBar. A toggle button is always present at the bottom left, flipping that state.
+
+The `<header>` element wrap both the nav and toggle button. It's `position: fixed` and cover the full viewport. By default, click event flow through, allowing the user to interact with the app underneath. Only the `<nav>` and toggle `<button>` capture events.
+
+When `showNavBar` is true, the header captures all click-events. Its only job is to close the nav. Wherever the user clicks: A destination, the hide navbar button, outside either, they'll always want the next action to be hiding the menu and resume interacting with the app. `handleHideNavBar()` handles this. Because the header sits at the highest z-index, the entire viewport turns into one large button: `onClick={showNavBar ? handleHideNavBar : undefined}`.
+
+What about keyboard accessibility? The header doesn't rely on React state handling, it turns to CSS instead. When a link or the toggle is at focus, a CSS :hover-within rule reveals the menu, regardless of the ´showNavBar´'s boolean state.
+
+After a destination is selected, `handleHideNavBar()` moves focus to the main view `#navBarTabDestination`, escaping the keyboard user away from the navbar, to the main content.
+
+Wide screens override most rules with a fixed sidebar. The toggle button gets `pointer-events: none` and `visibility: hidden`, which also removes it from the tab order and prevents "phantom tabbing". This may raise WCAG concerns.
+
+# Usestates
+useState being one central part for this project, this deserve its own chapter. The useState:s of Haveyouplayed are:
+- Showing and hiding the navigation-bar as a boolean.
 
 ## AI disclosure
 I remain committed to distancing myself from AI and LLMs by minimizing my use of them. Claude have been involved strictly for looking up technical information, when traditional video tutorials and reading in forums such as Reddit, Stack Overflow or YouTube tutorials fall short. This includes TypeScript flags or syntax, Vite documentation, grammar check, technical tools jargons, or oddly specific gotchas. However, no code, nor any vector and raster assets were AI generated.
@@ -71,3 +97,4 @@ React read SVG:s a little differently from a vanilla Vite project. You need the 
 - Kanit (font theme): [fonts.google.com/specimen/Kanit](https://fonts.google.com/specimen/Kanit)
 - How to add SVG support for React for Vite: [www.npmjs.com/package/vite-plugin-svgr](https://www.npmjs.com/package/vite-plugin-svgr)
 - SVG a11y tip: [stackoverflow.com/questions/57983591](https://stackoverflow.com/questions/57983591/firefox-a11y-audit-with-inline-svgs-content-with-images-must-be-labeled)
+- Navigation bar influence: [github.com/MidnattLantern/divinesofidoria](https://github.com/MidnattLantern/divinesofidoria)

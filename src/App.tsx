@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <NavBar/>
-      <main className={Styles.test__test}>
+      <main className={Styles.test__test} tabIndex={0} id="navBarTabDestination">
         <div id='home-about'>
           <HomeAbout/>
         </div>
