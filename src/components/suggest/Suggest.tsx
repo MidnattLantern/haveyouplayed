@@ -1,4 +1,4 @@
-import Styles from './Suggest.module.scss'
+// import Styles from './Suggest.module.scss'
 
 function Suggest() {
 

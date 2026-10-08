@@ -1,4 +1,4 @@
-import Styles from './HomeAbout.module.scss'
+// import Styles from './HomeAbout.module.scss'
 
 function HomeAbout() {
 

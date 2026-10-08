@@ -28,6 +28,9 @@ Haveyouplayed uses Vite + React + TypeScript. Prerequisites that your machine ha
 ## Deployment
 Haveyouplayed house its codebase on Github, and is being hosted by Vercel.
 
+### Vercel
+Prerequisites that your github is linked to your Vercel's team and that the codebase has a vercel.json file included in root directory. Under Add New / Project, select the repository name "haveyouplayed". If access is limited, search the name, click "Configure GitHub App", and give Vercel access permissions from there. Since this is a project created with Vite, "Application Preset" should be set to "Vite". Before clicking "Deploy", ensure there are no errors in the codebase. Any error as mundane as "'myUnusedComponent' is declared but its value is never read." will cause a deployment failure. Patch any such errors and push to repo.
+
 ## Wireframes
 Wireframes were done through Figma: [www.figma.com/design (haveyouplayed)](https://www.figma.com/design/PV0j8Asx3JjxLCcvLFy2mr/Untitled?node-id=0-1&t=xQby5OZztakyctIW-1)
 NOTE: Changes from initial wireframe to final product may vary. This project does not make an orthodox commitment.
