@@ -75,6 +75,8 @@ After a destination is selected, `handleHideNavBar()` moves focus to the main vi
 
 Wide screens override most rules with a fixed sidebar. The toggle button gets `pointer-events: none` and `visibility: hidden`, which also removes it from the tab order and prevents "phantom tabbing". This may raise WCAG concerns.
 
+The logo exists in the DOM twice, one for the mobile viewport, the other for the desktop viewport. Whether this is best practice or not could be debated, but it's an appropriate decision for this project's scope.
+
 # Usestates
 useState being one central part for this project, this deserve its own chapter. The useState:s of Haveyouplayed are:
 - Showing and hiding the navigation-bar as a boolean.

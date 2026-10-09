@@ -1,7 +1,7 @@
 @keyframes pulse-focus {
-    0% {border-color: var(--color-primary);}
-    50% {border-color: var(--color-secondary);}
-    100% {border-color: var(--color-primary);}
+    0% {border-color: var(--color-primary); fill: var(--color-primary); color: var(--color-primary);}
+    50% {border-color: var(--color-secondary); fill: var(--color-secondary); color: var(--color-secondary);}
+    100% {border-color: var(--color-primary); fill: var(--color-primary); color: var(--color-primary);}
 }
 
 @keyframes nav-slide-in {
@@ -12,6 +12,18 @@
 @keyframes nav-slide-out {
     from {left: 0}
     to {left: -100vw;}
+}
+
+.logoColor {
+    fill: var(--color-pure-white);
+}
+
+.logoWideVP {
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    pointer-events: none;
 }
 
 .container {
@@ -36,6 +48,7 @@
         border-bottom-right-radius: 20px;
         background-color: var(--color-surface-transparent);
         backdrop-filter: blur(2px);
+        box-shadow: 0 0 15px var(--color-surface-transparent);
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -52,12 +65,15 @@
             font-weight: 600;
             text-decoration: none;
         }
+        a:hover,
+        a:focus {
+            animation: pulse-focus 5s infinite;
+            outline: none;
+            .logoColor {
+                animation: pulse-focus 5s infinite;
+            }
+        }
     }
-    // nav:focus-within {
-    //     left: 0;
-    //     animation: nav-slide-in 0.5s;
-    //     pointer-events: all;
-    // }
 }
 
 .containerNoEvents {
@@ -86,7 +102,7 @@
     align-items: center;
     width: 220px;
     height: 70px;
-    transition: all 0.2s ease;
+    transition: all 0.5s ease;
     pointer-events: all;
 
     h1 {
@@ -95,27 +111,37 @@
     }
 }
 
-.toggleNavBarButton:hover {
-    // border-color: var(--color-primary);
-    animation: pulse-focus 5s infinite;
-    cursor: pointer;
-}
-
-.expandedNavBarButton {
-    width: 100%;
-}
-
 .roundArrow {
     fill: var(--color-body);
     width: 45px;
     height: 45px;
     margin-right: 10px;
-    transition: all 0.2s ease;
+    transition: all 0.5s ease;
 }
 
 .roundArrowLeft {
     transform: rotate(180deg);
     fill: var(--color-primary);
+}
+
+.toggleNavBarButton:focus,
+.toggleNavBarButton:hover {
+    // border-color: var(--color-primary);
+    animation: pulse-focus 5s infinite;
+    cursor: pointer;
+    outline: none;
+
+    .roundArrow {
+        animation: pulse-focus 5s infinite;
+    }
+
+    .logoColor {
+        animation: pulse-focus 5s infinite;
+    }
+}
+
+.expandedNavBarButton {
+    width: 100%;
 }
 
 .container nav:focus-within,
@@ -131,6 +157,11 @@
 }
 
 @media screen and (min-width: 1024px) {
+    .logoWideVP {
+        visibility: visible;
+        pointer-events: all;
+    }
+
     .toggleNavBarButton {
         pointer-events: none;
         visibility: hidden;
