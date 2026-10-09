@@ -44,6 +44,7 @@ NOTE: Changes from initial wireframe to final product may vary. This project doe
 ## Codebase architecture
 - [Components](#components)
 - [SCSS modules](#scss-modules)
+- [SCSS for SVG](#scss-for-svg)
 - [ID Navigation](#id-navigation)
 - [Naming files and directories](#naming-files-and-directories)
 - [Navbar](#navbar)
@@ -54,11 +55,14 @@ The architecture takes advantage of React's component-based JSX features.
 ### SCSS modules
 By utulizing .module for scss documents, each component and its class-names can be truly unique, meaning multiple components could have ".container" without overlapping each other. Note that .module files shouldn't use element selectors, such as "span" or "article", use class-names instead. Universal element selectors and variables should be specified in index.scss. Colors and fonts should always use variables going back to index.scss.
 
+### SCSS for SVG
+The SCSS module convention does not apply for targeting some complex SVG:s. Using modular SCSS are usually convenient and doable when the entire SVG asset is targeted, but becomes complicated if the SVG use for instance more than one non-hard-coded color. Targeting and assigning modular id:s doesn't work the same way in a JSX-file as for an XML-file, therefore, this exception exist to allow targeting multiple elements within more complex SVG:s. A non-modular-SCSS file may exist to correspond an SVG and target SVG:s id:s or classNames. Keep in mind when working with these rules to be cautious when naming id:s inside SVG:s so that multiple SCSS files and targetId:s does not overlap each other.
+
 ### ID Navigation
 Any destination should live in App.tsx. This way, looking for the destination points throughout the codebase is conventient.
 
 ### Naming files and directories
-Directories use camelCase, files making up a component use PascalCase, and regular JS files use camelCase. SCSS files use the same name as its corresponding TSX file, with a .module addition. Exceptions are main.tsx and index.scss. SCSS class-names use camelCase, since modules break with dashes in JSX. Underscores still work though, and may be used for BEM:s, such as "wrapper__myCard".
+Directories use camelCase, files making up a component use PascalCase, and regular JS files use camelCase. SCSS files use the same name as its corresponding TSX file, with a .module addition. Exceptions are main.tsx, index.scss, and CSS ruels for targeting SVG:s (see [SCSS for SVG](#scss-for-svg)). SCSS class-names use camelCase, since modules break with dashes in JSX. Underscores still work though, and may be used for BEM:s, such as "wrapper__myCard".
 
 ### NavBar
 The navigation-bar is adapted from the solution of one of my private projects: [Divines Of Idoria](https://midnattlantern.github.io/divinesofidoria/). It's a phone-first design.

@@ -1,0 +1,26 @@
+// non-modular SCSS are strictly exclusive for more complex SVG:s only
+
+#bannerBody {
+    fill: var(--color-pure-white);
+}
+
+#bannerPrimary {
+    fill: var(--color-primary);
+}
+
+#bannerSecondary {
+    fill: var(--color-secondary)
+}
+
+#bannerText {
+    fill: var(--color-surface);
+    font-size: 12rem;
+    font-family: var(--font-theme);
+    font-style: italic;
+    font-weight: 600;
+    text-shadow:
+        -2px -2px 0 var(--color-pure-white),
+        2px -2px 0 var(--color-pure-white),
+        -2px  2px 0 var(--color-pure-white),
+        2px  2px 0 var(--color-pure-white);
+}
