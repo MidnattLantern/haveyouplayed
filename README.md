@@ -62,7 +62,7 @@ The SCSS module convention does not apply for targeting some complex SVG:s. Usin
 Any destination should live in App.tsx. This way, looking for the destination points throughout the codebase is conventient.
 
 ### Naming files and directories
-Directories use camelCase, files making up a component use PascalCase, and regular JS files use camelCase. SCSS files use the same name as its corresponding TSX file, with a .module addition. Exceptions are main.tsx, index.scss, and CSS ruels for targeting SVG:s (see [SCSS for SVG](#scss-for-svg)). SCSS class-names use camelCase, since modules break with dashes in JSX. Underscores still work though, and may be used for BEM:s, such as "wrapper__myCard".
+Directories use camelCase, files making up a component use PascalCase, and regular JS files use camelCase. SCSS files use the same name as its corresponding TSX file, with a .module addition. Exceptions are main.tsx, index.scss, and CSS rules for targeting SVG:s (see [SCSS for SVG](#scss-for-svg)). SCSS class-names use camelCase, since modules break with dashes in JSX. Underscores still work though, and may be used for BEM:s, such as "wrapper__myCard".
 
 ### NavBar
 The navigation-bar is adapted from the solution of one of my private projects: [Divines Of Idoria](https://midnattlantern.github.io/divinesofidoria/). It's a phone-first design.

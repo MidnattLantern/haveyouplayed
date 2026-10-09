@@ -183,7 +183,7 @@
 
     .container nav {
         top: 0;
-        width: 200px;
+        width: var(--sidebar-width);
         height: 100%;
         border-top: 0;
         border-bottom: 0;

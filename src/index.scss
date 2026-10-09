@@ -10,6 +10,7 @@
   --font-theme: "Kanit", Roboto, sans-serif;
 
   --pillify: 100vmax;
+  --sidebar-width: 200px;
 
   box-sizing: border-box;
 }
@@ -17,10 +18,26 @@
 body {
   margin: 0;
   background: var(--color-surface);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  max-width: 600px;
 }
 
 p, span, a, h1, h2 {
+  margin: 0;
   color: var(--color-body);
   font-family: var(--font-theme);
   font-style: italic;
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    max-width: 1000px;
+    margin-left: calc(var(--sidebar-width) + 10px);
+    margin-right: calc(var(--sidebar-width) + 10px);
+  }
 }

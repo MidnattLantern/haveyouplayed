@@ -1,4 +1,4 @@
-import Styles from './App.module.scss'
+// import Styles from './App.module.scss'
 import HomeAbout from './components/homeAbout/HomeAbout'
 import NavBar from './components/navBar/NavBar'
 import Suggest from './components/suggest/Suggest'
@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <NavBar/>
-      <main className={Styles.test__test} tabIndex={0} id="navBarTabDestination">
+      <main tabIndex={0} id="navBarTabDestination">
         <div id='home-about'>
           <HomeAbout/>
         </div>
