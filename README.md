@@ -13,7 +13,7 @@ Developed by Alma Isaksson 2026
 7. [Usestates](#usestates)
 8. [AI disclosure](#ai-disclosure)
 9. [Other notes](#other-notes)
-10. [Acknowledgements](#acknowledgements)
+10. [Acknowledgements and helpful resources](#acknowledgements-and-helpful-resources)
 
 ## About
 
@@ -48,6 +48,7 @@ NOTE: Changes from initial wireframe to final product may vary. This project doe
 - [ID Navigation](#id-navigation)
 - [Naming files and directories](#naming-files-and-directories)
 - [Navbar](#navbar)
+- [Library filters](#library-filters)
 
 ### Components
 The architecture takes advantage of React's component-based JSX features.
@@ -81,6 +82,60 @@ Wide screens override most rules with a fixed sidebar. The toggle button gets `p
 
 The logo exists in the DOM twice, one for the mobile viewport, the other for the desktop viewport. Whether this is best practice or not could be debated, but it's an appropriate decision for this project's scope.
 
+### Library filters
+This information in particular is new to me, so brace yourself with overly detailed technical explainations. I wrote this to remember this stuff better.
+
+The `.filter()` can be straight forward when you filter by a single condition.
+```JavaScript
+const filterByDone = myTodo.filter(todo => todo.done === true)
+```
+But the library of Haveyouplayed can store an array of multiple conditions "platformFilters" as useState. If you (like me) don't know better, you might think this should be enough:
+```JavaScript
+// game.platform example:   ["Steam for Windows", "PlayStation 5"]
+// platformFilters example: ["PlayStation 5"]
+
+const filtered = library.filter(game => game.platform === platformFilters) // expecting true if any platformFilters match any of the game.platform
+```
+The problems are: These two, unlike primitives from the `filterByDone` example, are objects, thus they have different memory addresses and will always return false, even if their values were to be a perfect match. You'd need a function that can look inside the objects and compare them with each other as values.
+
+`.some()` can check if an array contains or fulfills any specific value or condition:
+```JavaScript
+const myGamePlatforms1 = ["Nintendo Switch 2"]
+const myGamePlatforms2 = ["Nintendo Switch 2", "Nintendo Switch"]
+
+console.log(myGamePlatforms1.some(platform => platform === "Nintendo Switch")) // false
+console.log(myGamePlatforms2.some(platform => platform === "Nintendo Switch")) // true
+```
+The idea is to use a mix of `.some()` and `.filter()` to iterate through:
+- The library of all the games
+- The array of platforms from each game
+- The array of platforms from filters
+
+Then compare and keep the games from the library, whose any of the platforms from its "platform" array match at least one of the options from the filters array.
+
+Like with `.map()` and `.filter()`, `.some()` use a reciever before the `.` and a callback inside the `()`: `reciever.some(callback)`. Reciever represent the whole array, callback represent one index of that array.
+
+With all that information, the following block of code is hopefully self-explainatory:
+```TypeScript
+import rawLibraryData from "./path/to/data.json"
+import type { IGame } from "./models"
+
+const libraryData = rawLibraryData as IGame[]
+const [platformFilters, setPlatformFilters] = useState(["Nintendo Switch", "Nintendo Switch 2"])
+
+function handleApplyPlatformFilters() {
+    const filtered = libraryData.filter(gameFromLibraryData =>
+        platformFilters.some(platformToInclude =>
+            gameFromLibraryData.platform.some(platformThatExists =>
+                platformThatExists === platformToInclude
+            )
+        )
+    )
+    console.log(filtered)
+}
+```
+In a professional setting, reciever and callback names shouldn't be this long, but I decided to keep them long considering the point of this project (learning & training).
+
 # Usestates
 useState being one central part for this project, this deserve its own chapter. The useState:s of Haveyouplayed are:
 - Showing and hiding the navigation-bar as a boolean.
@@ -101,9 +156,11 @@ React read SVG:s a little differently from a vanilla Vite project. You need the 
 ### Modular SCSS as choice of styling
 With the exception of non-modular SCSS files for advanced SVG:s, Haveyouplayed does evey styling from scratch, including transitional animations. Tools like Tailwind or Bootstrap strip away one of the most fun parts of front-end development. And doing things from the ground up offers more control and freedom. SCSS makes style-sheets more convenient to work with, such as single line comments (two slashes instead of slash-asterisk-asterisk-slash) or nested queries. The tradeoff is that doing styling from scratch may end you up with long and messy style-sheets that are hard to read and follow. Things may also become even more complicated when you mix modular and non-modular style-sheets (see [SCSS for SVG](#scss-for-svg)).
 
-## Acknowledgements
+## Acknowledgements and helpful resources
 - How to deploy to Vercel: [vercel.com/kb/guide/deploying-react-with-vercel](https://vercel.com/kb/guide/deploying-react-with-vercel)
 - Kanit (font theme): [fonts.google.com/specimen/Kanit](https://fonts.google.com/specimen/Kanit)
 - How to add SVG support for React for Vite: [www.npmjs.com/package/vite-plugin-svgr](https://www.npmjs.com/package/vite-plugin-svgr)
 - SVG a11y tip: [stackoverflow.com/questions/57983591](https://stackoverflow.com/questions/57983591/firefox-a11y-audit-with-inline-svgs-content-with-images-must-be-labeled)
 - Navigation bar influence: [github.com/MidnattLantern/divinesofidoria](https://github.com/MidnattLantern/divinesofidoria)
+- JavaScript `.filter()`: [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
+- JavaScript `.some()`: [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some)
