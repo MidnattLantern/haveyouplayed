@@ -27,7 +27,7 @@
 }
 
 .container {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -95,7 +95,9 @@
     border-top-right-radius: var(--pillify);
     border-bottom-right-radius: var(--pillify);
     background-color: var(--color-surface-transparent);
+    backdrop-filter: blur(2px);
     border: 2px solid var(--color-body-transparent);
+    box-shadow: 0 0 15px var(--color-surface-transparent);
     border-left: 0;
     display: flex;
     justify-content: space-between;

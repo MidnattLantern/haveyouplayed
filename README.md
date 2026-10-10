@@ -98,6 +98,9 @@ React read SVG:s a little differently from a vanilla Vite project. You need the 
 ```
  I don't know the techincal details, but to prevent SVG:s from crashing your app, simply add `?react` to the end of your import: `import logo from './logo.svg?react'`.
 
+### Modular SCSS as choice of styling
+With the exception of non-modular SCSS files for advanced SVG:s, Haveyouplayed does evey styling from scratch, including transitional animations. Tools like Tailwind or Bootstrap strip away one of the most fun parts of front-end development. And doing things from the ground up offers more control and freedom. SCSS makes style-sheets more convenient to work with, such as single line comments (two slashes instead of slash-asterisk-asterisk-slash) or nested queries. The tradeoff is that doing styling from scratch may end you up with long and messy style-sheets that are hard to read and follow. Things may also become even more complicated when you mix modular and non-modular style-sheets (see [SCSS for SVG](#scss-for-svg)).
+
 ## Acknowledgements
 - How to deploy to Vercel: [vercel.com/kb/guide/deploying-react-with-vercel](https://vercel.com/kb/guide/deploying-react-with-vercel)
 - Kanit (font theme): [fonts.google.com/specimen/Kanit](https://fonts.google.com/specimen/Kanit)

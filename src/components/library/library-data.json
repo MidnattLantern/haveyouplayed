@@ -1,0 +1,44 @@
+[
+    {
+        "title": "Breath of the Wild",
+        "description": "Lorem Ipsum",
+        "genre": ["Action", "Adventure", "Open world", "Puzzle"],
+        "platform": ["Nintendo Switch", "Nintendo Switch 2"]
+    },
+    {
+        "title": "Ori and the Blind Forest",
+        "description": "Lorem Ipsum",
+        "genre": ["Action", "Adventure", "Metroidvania", "Puzzle"],
+        "platform": ["Steam for Windows", "Xbox One", "Nintendo Switch"]
+    },
+    {
+        "title": "Hollow Knight: Silksong",
+        "description": "Lorem Ipsum",
+        "genre": ["Action", "Adventure", "Metroidvania", "Souls-like"],
+        "platform": ["Steam for Windows", "Steam for Mac", "Steam for Linux", "Nintendo Switch", "Nintendo Switch 2", "Xbox Series", "PlayStation 5"]
+    },
+    {
+        "title": "A Hat in Time",
+        "description": "Lorem Ipsum",
+        "genre": ["3D platformer", "Action", "Adventure"],
+        "platform": ["Steam for Windows", "Nintendo Switch", "Xbox One", "PlayStation 4", "PlayStation 5"]
+    },
+    {
+        "title": "Fire Emblem: Fortume's Weave",
+        "description": "Lorem Ipsum",
+        "genre": ["Strategy", "Role-play"],
+        "platform": ["Nintendo Switch 2"]
+    },
+    {
+        "title": "Wargroove",
+        "description": "Lorem Ipsum",
+        "genre": ["Strategy", "Role-play"],
+        "platform": ["Steam for Windows", "Nintendo Switch", "Xbox One", "PlayStation 4"]
+    },
+    {
+        "title": "Deltarune",
+        "description": "Lorem Ipsum",
+        "genre": ["Role-play"],
+        "platform": ["Steam for Windows", "Steam for Mac", "Nintendo Switch", "Nintendo Switch 2", "PlayStation 4", "PlayStation 5"]
+    }
+]

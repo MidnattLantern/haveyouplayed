@@ -1,5 +1,6 @@
 // import Styles from './App.module.scss'
 import HomeAbout from './components/homeAbout/HomeAbout'
+import Library from './components/library/Library'
 import NavBar from './components/navBar/NavBar'
 import Suggest from './components/suggest/Suggest'
 
@@ -13,7 +14,7 @@ function App() {
           <HomeAbout/>
         </div>
         <div id='library'>
-          <h2>Library</h2>
+          <Library/>
         </div>
         <div id='suggest'>
           <Suggest/>
