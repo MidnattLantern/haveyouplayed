@@ -1,118 +1,119 @@
 [
     {
         "title": "The Legend of Zelda: Breath of the Wild",
-        "description": "Lorem Ipsum",
+        "description": "No kingdom. No memories. After a 100-year slumber, Link wakes up alone in a world he no longer remembers. Now the legendary hero must explore a vast and dangerous land and regain his memories before Hyrule is lost forever. Armed only with what he can scavenge, Link sets out to find answers and the resources needed to survive. Explore the landscape of Hyrule any way you like. Climb up towers and mountain peaks in search of new destinations, then set your own path and plunge into the wilderness.",
         "wallpaper": "wallpapers/the-legend-of-zelda-breath-of-the-wild-wallpaper.webp",
         "genre": ["Action", "Adventure", "Open world", "Puzzle"],
         "platform": ["Nintendo Switch", "Nintendo Switch 2"]
     },
     {
         "title": "Ori and the Blind Forest",
-        "description": "Lorem Ipsum",
+        "description": "The forest of Nibel is dying. After a powerful storm sets a series of devastating events in motion, an unlikely hero must journey to find his courage and confront a dark nemesis to save his home. Ori and the Blind Forest tells the tale of a young orphan destined for heroics, through a visually stunning action-platformer crafted by Moon Studios for Xbox One and PC. Featuring hand-painted artwork, meticulously animated character performance, and a fully orchestrated score, Ori and the Blind Forest explores a deeply emotional story about love and sacrifice, and the hope that exists in us all.",
         "wallpaper": "wallpapers/ori-and-the-blind-forest-wallpaper.webp",
         "genre": ["Action", "Adventure", "Metroidvania", "Puzzle"],
         "platform": ["Steam for Windows", "Xbox One", "Nintendo Switch"]
     },
     {
         "title": "Little Nightmares",
-        "description": "Lorem Ipsum",
+        "description": "Little Nightmares is a distorted place that exists somewhere between dreams and reality, where children are left to face the horrors of the world alone, searching for hope amidst the dead meat and old shoes of The Maw. Armed with nothing but a lighter and a bright yellow raincoat, our little hero Six begins a perilous journey to the surface and a fateful meeting with The Lady. With its unique blend of dark bedtime stories and diverse mythological influences, Little Nightmares explores the unpleasant sides of humanity … in as nice a way as possible! This was the first of many original games from Tarsier Studios, and is our love letter to all of the wonderful things that life has to offer.",
         "wallpaper": "wallpapers/little-nightmares-wallpaper.webp",
         "genre": ["Horror", "3D platformer", "Puzzle", "Adventure"],
         "platform": ["Steam for Windows", "Xbox One", "Xbox Series", "PlayStation 4", "PlayStation 5", "Nintendo Switch", "Nintendo Switch 2"]
     },
     {
         "title": "Hollow Knight",
-        "description": "Lorem Ipsum",
+        "description": "Beneath the fading town of Dirtmouth sleeps a vast, ancient kingdom. Many are drawn beneath the surface, searching for riches, or glory, or answers to old secrets. As the enigmatic Knight, you'll traverse the depths, unravel its mysteries and conquer its evils. Hollow Knight is a challenging 2D action-adventure. You'll explore twisting caverns, battle tainted creatures and escape intricate traps, all to solve an ancient long-hidden mystery. The world of Hollow Knight is brought to life in vivid, moody detail, its caverns alive with bizarre and terrifying creatures, each animated by hand in a traditional 2D style. Every new area you'll discover is beautifully unique and strange, teeming with new creatures and characters to discover. The world of Hollow Knight is one worth exploring just to take in the sights and discover new wonders hidden off of the beaten path.",
         "wallpaper": "wallpapers/hollow-knight-wallpaper.webp",
         "genre": ["Action", "Adventure", "Metroidvania", "Souls-like"],
         "platform": ["Steam for Windows", "Steam for Mac", "Steam for Linux", "Nintendo Switch", "Nintendo Switch 2", "Xbox Series", "PlayStation 5"]
     },
     {
         "title": "A Hat in Time",
-        "description": "Lorem Ipsum",
+        "description": "In A Hat in Time you play as a tiny space-traveling girl with a big top hat. Her adventure is halted when all her fuel, the Time Pieces, is lost and scattered across a nearby planet. Hat Kid must now jump, fight and stitch new hats to make her way into every nook and cranny of this new world in order to restore her fuel and resume her journey. On her way, she'll bump into the menacing Mafia of Cooks, the goofy birds of Dead Bird Studio, the spooky shadows of Subcon Forest, and more! Every mission in A Hat in Time is unique! At one moment you'll be solving the Murder on the Owl Express by finding clues and interrogating the locals, the next moment you'll be the band marshal in The Big Parade, or sneaking through the bird-run Dead Bird Studio!",
         "wallpaper": "wallpapers/a-hat-in-time-wallpaper.webp",
         "genre": ["3D platformer", "Action", "Adventure"],
         "platform": ["Steam for Windows", "Nintendo Switch", "Xbox One", "PlayStation 4", "PlayStation 5"]
     },
     {
         "title": "Fire Emblem: Fortume's Weave",
-        "description": "Lorem Ipsum",
+        "description": "Travel through time to gather allies and defeat the demon god Balor. Test your tactical prowess in battle as you guide four heroes on their interwoven journeys from past to present. Together, you'll save the future from ruin—or fall trying. Command your units in strategic turn-based combat against the enemy. Learn the strengths and weaknesses of your units and direct them wisely on the grid-based map, and you just might gain the upper hand.",
         "wallpaper": "wallpapers/fire-emblem-fortunes-weave-wallpaper.webp",
         "genre": ["Strategy", "Role-play"],
         "platform": ["Nintendo Switch 2"]
     },
     {
         "title": "Wargroove",
-        "description": "Lorem Ipsum",
+        "description": "Command an army, customize battlefields, and challenge your friends, in this richly detailed return to retro turn-based combat. Play as one of 12+ Commanders from 4 warring factions, each with their own distinct personalities and motivations. Where does your allegiance lie?",
         "wallpaper": "wallpapers/wargroove-wallpaper.webp",
         "genre": ["Strategy", "Role-play"],
         "platform": ["Steam for Windows", "Nintendo Switch", "Xbox One", "PlayStation 4"]
     },
     {
         "title": "Deltarune",
-        "description": "Lorem Ipsum",
+        "description": "Dive into the parallel story to UNDERTALE! Fight or spare your way through action-packed battles as you explore a mysterious world alongside an endearing cast of new and familiar characters. A massive soundtrack and story written by Toby Fox! Meet new and endearing main characters, as well as familiar faces like Toriel, Sans, and more. Huh? Papyrus? No, he's busy. Sorry Smooth and expressive pixel-animation by Temmie. She also has a new hat (in-game) A linear, chapter-based system that you can pick up from anywhere. Creative bullet-dodging based battles inspired by games like the Touhou series and Chrono Trigger. Jevilishly difficult hidden bosses.",
         "wallpaper": "wallpapers/deltarune-wallpaper.webp",
         "genre": ["Role-play"],
         "platform": ["Steam for Windows", "Steam for Mac", "Nintendo Switch", "Nintendo Switch 2", "PlayStation 4", "PlayStation 5"]
     },
     {
         "title": "The Legend of Zelda: Tears of the Kingdom",
-        "description": "Lorem Ipsum",
+        "description": "In this sequel to the Legend of Zelda: Breath of the Wild game, you'll decide your own path through the sprawling landscapes of Hyrule and the mysterious islands floating in the vast skies above. Can you harness the power of Link's abilities to fight back against the malevolent forces that threaten the kingdom?",
         "wallpaper": "wallpapers/the-legend-of-zelda-tears-of-the-kingdom-wallpaper.webp",
         "genre": ["Action", "Adventure", "Open world", "Puzzle"],
         "platform": ["Nintendo Switch", "Nintendo Switch 2"]
     },
     {
         "title": "Ori and the Will of the Wisps",
-        "description": "Lorem Ipsum",
+        "description": "The little spirit Ori is no stranger to peril, but when a fateful flight puts the owlet Ku in harm's way, it will take more than bravery to bring a family back together, heal a broken land, and discover Ori's true destiny. From the creators of the acclaimed action-platformer Ori and the Blind Forest comes the highly anticipated sequel. Embark on an all-new adventure in a vast world filled with new friends and foes that come to life in stunning, hand-painted artwork. Set to a fully orchestrated original score, Ori and the Will of the Wisps continues the Moon Studios tradition of tightly crafted platforming action and deeply emotional storytelling.",
         "wallpaper": "wallpapers/ori-and-the-will-of-the-wisps-wallpaper.webp",
         "genre": ["Action", "Adventure", "Metroidvania", "Puzzle"],
         "platform": ["Steam for Windows", "Xbox One", "Nintendo Switch"]
     },
     {
         "title": "Hollow Knight: Silksong",
-        "description": "Lorem Ipsum",
+        "description": "The lethal hunter Hornet finds herself alone in a vast, unfamiliar kingdom. She must battle foes, seek out allies, and solve mysteries as she ascends on a deadly pilgrimage to the kingdom's peak. Bound by her lineage and guided by echoes of her past, Hornet will adventure through mossy grottos, coral forests and shining citadels to unravel a deadly thread that threatens this strange new land. Hornet must master a whole new suite of powerful moves to survive. She'll unleash devastating attacks, learn incredible silken abilities, and craft deadly tools in order to overcome the kingdom's challenges. Over 200 ferocious foes stand between Hornet and the shining citadel crowning the kingdom. Beasts and hunters, assassins and kings, monsters and knights - Hornet must face them all with bravery and skill! The vast interconnected world of Hollow Knight: Silksong is brought vividly to life in a traditional, hand-crafted, 2D style. Gilded cities, lakes of fire, and misted moors are illustrated in exquisite detail, all accompanied by a vibrant orchestral score. In her search for the truth behind her capture, Hornet will befriend surprising strangers, discover shocking secrets and solve ancient mysteries in a haunted kingdom full of wonders.",
         "wallpaper": "wallpapers/hollow-knight-silksong-wallpaper.webp",
         "genre": ["Action", "Adventure", "Metroidvania", "Souls-like"],
         "platform": ["Steam for Windows", "Steam for Mac", "Steam for Linux", "Nintendo Switch", "Nintendo Switch 2", "Xbox Series", "PlayStation 5"]
     },
     {
         "title": "Fire Emblem: Three Houses",
-        "description": "Lorem Ipsum",
+        "description": "War is coming to the continent of Fódlan. Here, order is maintained by the Church of Seiros, which hosts the prestigious Officer's Academy within its headquarters. You are invited to teach one of its three mighty houses, each comprised of students brimming with personality and represented by a royal from one of three territories. As their professor, you must lead your students in their academic lives and in turn-based, tactical RPG battles wrought with strategic, new twists to overcome. Which house, and which path, will you choose?",
         "wallpaper": "wallpapers/fire-emblem-three-houses-wallpaper.webp",
         "genre": ["Strategy", "Role-play"],
         "platform": ["Nintendo Switch"]
     },
     {
         "title": "Nine Sols",
-        "description": "Lorem Ipsum",
+        "description": "Nine Sols is a lore rich, hand-drawn 2D action-platformer featuring Sekiro-inspired deflection focused combat. Embark on a journey of eastern fantasy, explore the land once home to an ancient alien race, and follow a vengeful hero's quest to slay the 9 Sols, formidable rulers of this forsaken realm. ",
         "wallpaper": "wallpapers/nine-sols-wallpaper.webp",
         "genre": ["Action", "Adventure", "Metroidvania", "Souls-like"],
         "platform": ["Steam for Windows", "Steam for Mac", "Xbox One", "Xbox Series", "PlayStation 4", "PlayStation 5", "Nintendo Switch"]
     },
     {
         "title": "Minecraft",
-        "description": "Lorem Ipsum",
+        "description": "Build anything you can imagine, uncover eerie mysteries, and survive the night in the ultimate sandbox adventure game. In Minecraft, every playthrough is different, and unforgettable adventures await behind every corner. Explore and craft your way through an infinite world that's yours to shape, one block at a time. The typical journey starts with punching a tree to gather wood. The rest of your Minecraft adventure is up to you, whether you mine for precious ores or seek out rare materials. Just make sure to stock up on food! When the sun goes down, hostile mobs abound. Will you face them or sleep through the night? And remember: it's always dark underground. Minecraft is the ultimate building game. Craft tools, build a humble shelter, or engineer your base with redstone. Can you build a base in the Nether? Only one way to find out.",
+        "wallpaper": "wallpapers/minecraft-wallpaper.webp",
         "genre": ["Sandbox", "Adventure", "Open world"],
         "platform": ["Xbox One", "Xbox Series", "Nintendo Switch", "Nintendo Switch 2", "PlayStation 4", "PlayStation 5"]
     },
     {
         "title": "Haste",
-        "description": "Lorem Ipsum",
-        "wallpaper": "wallpapers/minecraft-wallpaper.webp",
+        "description": "Run fast, soar through the air, and master your landings as you speed through procedural worlds to outrun the end of the universe!",
+        "wallpaper": "wallpapers/haste-wallpaper.webp",
         "genre": ["3D platformer", "Rouge-like", "Action"],
         "platform": ["Steam for Windows", "Steam for Mac", "Steam for Linux", "Xbox One", "Xbox Series", "PlayStation 5", "Nintendo Switch 2"]
     },
     {
         "title": "Splatoon 3",
-        "description": "Lorem Ipsum",
+        "description": "Enter a sun-scorched desert inhabited by battle-hardened Inklings and Octolings. Ink, dive, swim, and splat your way to the top! Splash the stuff all over the place using your weapons. Sure, you can splat opponents, but ink can do so much more. There are 11 types of main weapon, each with different variations that set them apart. No two main weapons play quite the same, so be sure to experiment and find the ones that suit your play style!",
         "wallpaper": "wallpapers/splatoon-3-wallpaper.webp",
         "genre": ["Action", "Shooter", "Multiplayer"],
         "platform": ["Nintendo Switch"]
     },
     {
         "title": "Reanimal",
-        "description": "Lorem Ipsum",
+        "description": "In this co-op horror adventure game, you play as a brother & sister who go through hell to rescue their missing friends. Exploring by boat and on land, you must use your wits to survive, work together to escape the hellish island, and the dark secret that haunts you.",
         "wallpaper": "wallpapers/reanimal-wallpaper.webp",
         "genre": ["Horror", "3D platformer", "Puzzle", "Adventure"],
         "platform": ["Steam for Windows", "Xbox Series", "PlayStation 5", "Nintendo Switch2"]
