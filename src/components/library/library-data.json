@@ -2,6 +2,7 @@
     {
         "title": "The Legend of Zelda: Breath of the Wild",
         "description": "Lorem Ipsum",
+        "wallpaper": "wallpapers/the-legend-of-zelda-breath-of-the-wild-wallpaper.webp",
         "genre": ["Action", "Adventure", "Open world", "Puzzle"],
         "platform": ["Nintendo Switch", "Nintendo Switch 2"]
     },
@@ -10,6 +11,12 @@
         "description": "Lorem Ipsum",
         "genre": ["Action", "Adventure", "Metroidvania", "Puzzle"],
         "platform": ["Steam for Windows", "Xbox One", "Nintendo Switch"]
+    },
+    {
+        "title": "Little Nightmares",
+        "description": "Lorem Ipsum",
+        "genre": ["Horror", "3D platformer", "Puzzle", "Adventure"],
+        "platform": ["Steam for Windows", "Xbox One", "Xbox Series", "PlayStation 4", "PlayStation 5", "Nintendo Switch", "Nintendo Switch 2"]
     },
     {
         "title": "Hollow Knight",
@@ -66,15 +73,33 @@
         "platform": ["Nintendo Switch"]
     },
     {
-        "title": "Elden Ring",
-        "description": "Lorem Ipsum",
-        "genre": ["Action", "Adventure", "Open world", "Souls-like"],
-        "platform": ["Steam for Windows", "Xbox One", "Xbox Series", "PlayStation 4", "PlayStation 5", "Nintendo Switch 2"]
-    },
-    {
         "title": "Nine Sols",
         "description": "Lorem Ipsum",
         "genre": ["Action", "Adventure", "Metroidvania", "Souls-like"],
         "platform": ["Steam for Windows", "Steam for Mac", "Xbox One", "Xbox Series", "PlayStation 4", "PlayStation 5", "Nintendo Switch"]
+    },
+    {
+        "title": "Minecraft",
+        "description": "Lorem Ipsum",
+        "genre": ["Sandbox", "Adventure", "Open world"],
+        "platform": ["Xbox One", "Xbox Series", "Nintendo Switch", "Nintendo Switch 2", "PlayStation 4", "PlayStation 5"]
+    },
+    {
+        "title": "Haste",
+        "description": "Lorem Ipsum",
+        "genre": ["3D platformer", "Rouge-like", "Action"],
+        "platform": ["Steam for Windows", "Steam for Mac", "Steam for Linux", "Xbox One", "Xbox Series", "PlayStation 5", "Nintendo Switch 2"]
+    },
+    {
+        "title": "Splatoon 3",
+        "description": "Lorem Ipsum",
+        "genre": ["Action", "Shooter", "Multiplayer"],
+        "platform": ["Nintendo Switch"]
+    },
+    {
+        "title": "Reanimal",
+        "description": "Lorem Ipsum",
+        "genre": ["Horror", "3D platformer", "Puzzle", "Adventure"],
+        "platform": ["Steam for Windows", "Xbox Series", "PlayStation 5", "Nintendo Switch2"]
     }
 ]

@@ -26,9 +26,8 @@ function Library() {
                     platformThatExists === platformToInclude
                 )
             )
-        )        
+        )
     )
-
 
     return (
         <>

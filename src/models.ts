@@ -21,6 +21,7 @@
 export type IGame = {
     title: string,
     description: string,
+    wallpaper?: string,
     genre: string[],
     platform: string[]
 }
