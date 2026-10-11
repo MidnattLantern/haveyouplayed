@@ -9,72 +9,84 @@
     {
         "title": "Ori and the Blind Forest",
         "description": "Lorem Ipsum",
+        "wallpaper": "wallpapers/ori-and-the-blind-forest-wallpaper.webp",
         "genre": ["Action", "Adventure", "Metroidvania", "Puzzle"],
         "platform": ["Steam for Windows", "Xbox One", "Nintendo Switch"]
     },
     {
         "title": "Little Nightmares",
         "description": "Lorem Ipsum",
+        "wallpaper": "wallpapers/little-nightmares-wallpaper.webp",
         "genre": ["Horror", "3D platformer", "Puzzle", "Adventure"],
         "platform": ["Steam for Windows", "Xbox One", "Xbox Series", "PlayStation 4", "PlayStation 5", "Nintendo Switch", "Nintendo Switch 2"]
     },
     {
         "title": "Hollow Knight",
         "description": "Lorem Ipsum",
+        "wallpaper": "wallpapers/hollow-knight-wallpaper.webp",
         "genre": ["Action", "Adventure", "Metroidvania", "Souls-like"],
         "platform": ["Steam for Windows", "Steam for Mac", "Steam for Linux", "Nintendo Switch", "Nintendo Switch 2", "Xbox Series", "PlayStation 5"]
     },
     {
         "title": "A Hat in Time",
         "description": "Lorem Ipsum",
+        "wallpaper": "wallpapers/a-hat-in-time-wallpaper.webp",
         "genre": ["3D platformer", "Action", "Adventure"],
         "platform": ["Steam for Windows", "Nintendo Switch", "Xbox One", "PlayStation 4", "PlayStation 5"]
     },
     {
         "title": "Fire Emblem: Fortume's Weave",
         "description": "Lorem Ipsum",
+        "wallpaper": "wallpapers/fire-emblem-fortunes-weave-wallpaper.webp",
         "genre": ["Strategy", "Role-play"],
         "platform": ["Nintendo Switch 2"]
     },
     {
         "title": "Wargroove",
         "description": "Lorem Ipsum",
+        "wallpaper": "wallpapers/wargroove-wallpaper.webp",
         "genre": ["Strategy", "Role-play"],
         "platform": ["Steam for Windows", "Nintendo Switch", "Xbox One", "PlayStation 4"]
     },
     {
         "title": "Deltarune",
         "description": "Lorem Ipsum",
+        "wallpaper": "wallpapers/deltarune-wallpaper.webp",
         "genre": ["Role-play"],
         "platform": ["Steam for Windows", "Steam for Mac", "Nintendo Switch", "Nintendo Switch 2", "PlayStation 4", "PlayStation 5"]
     },
     {
         "title": "The Legend of Zelda: Tears of the Kingdom",
         "description": "Lorem Ipsum",
+        "wallpaper": "wallpapers/the-legend-of-zelda-tears-of-the-kingdom-wallpaper.webp",
         "genre": ["Action", "Adventure", "Open world", "Puzzle"],
         "platform": ["Nintendo Switch", "Nintendo Switch 2"]
     },
     {
         "title": "Ori and the Will of the Wisps",
         "description": "Lorem Ipsum",
+        "wallpaper": "wallpapers/ori-and-the-will-of-the-wisps-wallpaper.webp",
         "genre": ["Action", "Adventure", "Metroidvania", "Puzzle"],
         "platform": ["Steam for Windows", "Xbox One", "Nintendo Switch"]
     },
     {
         "title": "Hollow Knight: Silksong",
         "description": "Lorem Ipsum",
+        "wallpaper": "wallpapers/hollow-knight-silksong-wallpaper.webp",
         "genre": ["Action", "Adventure", "Metroidvania", "Souls-like"],
         "platform": ["Steam for Windows", "Steam for Mac", "Steam for Linux", "Nintendo Switch", "Nintendo Switch 2", "Xbox Series", "PlayStation 5"]
     },
     {
         "title": "Fire Emblem: Three Houses",
         "description": "Lorem Ipsum",
+        "wallpaper": "wallpapers/fire-emblem-three-houses-wallpaper.webp",
         "genre": ["Strategy", "Role-play"],
         "platform": ["Nintendo Switch"]
     },
     {
         "title": "Nine Sols",
         "description": "Lorem Ipsum",
+        "wallpaper": "wallpapers/nine-sols-wallpaper.webp",
         "genre": ["Action", "Adventure", "Metroidvania", "Souls-like"],
         "platform": ["Steam for Windows", "Steam for Mac", "Xbox One", "Xbox Series", "PlayStation 4", "PlayStation 5", "Nintendo Switch"]
     },
@@ -87,18 +99,21 @@
     {
         "title": "Haste",
         "description": "Lorem Ipsum",
+        "wallpaper": "wallpapers/minecraft-wallpaper.webp",
         "genre": ["3D platformer", "Rouge-like", "Action"],
         "platform": ["Steam for Windows", "Steam for Mac", "Steam for Linux", "Xbox One", "Xbox Series", "PlayStation 5", "Nintendo Switch 2"]
     },
     {
         "title": "Splatoon 3",
         "description": "Lorem Ipsum",
+        "wallpaper": "wallpapers/splatoon-3-wallpaper.webp",
         "genre": ["Action", "Shooter", "Multiplayer"],
         "platform": ["Nintendo Switch"]
     },
     {
         "title": "Reanimal",
         "description": "Lorem Ipsum",
+        "wallpaper": "wallpapers/reanimal-wallpaper.webp",
         "genre": ["Horror", "3D platformer", "Puzzle", "Adventure"],
         "platform": ["Steam for Windows", "Xbox Series", "PlayStation 5", "Nintendo Switch2"]
     }

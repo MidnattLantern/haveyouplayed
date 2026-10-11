@@ -1,13 +1,18 @@
 .wrapper {
     position: relative;
-    padding: 20px;
-    border-radius: 25px;
+    padding: 10px;
+    border-radius: 20px;
     background-color: var(--color-surface);
+
+    h3, p, ul {
+        position: relative;
+        z-index: 1;
+    }
 }
 
 .cardBorder {
     background-color: var(--color-secondary);
-    padding: 15px;
+    padding: 10px;
 }
 .cardBorder:hover,
 .cardBorder:focus {
@@ -28,13 +33,16 @@
     left: 0;
     width: 100%;
     height: 100%;
-    border-radius: 25px;
+    border-radius: 20px;
     object-fit: cover;
     filter: grayscale(100%);
     opacity: 0.1;
+    z-index: 1;
 }
 
 .wallpaperAsHero {
+    position: relative;
     width: 100%;
     border-radius: 10px;
+    z-index: 2;
 }
