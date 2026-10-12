@@ -11,7 +11,7 @@ function GameCard({
 
     return (
         <>
-            <div className={`${Styles.cardBorder} ${readMore ? undefined : Styles.cardClosed}`}>
+            <div className={`${Styles.cardBorder}`}>
                 <article className={Styles.wrapper}>
                     {gameCardData.wallpaper ? (
                         <img src={gameCardData.wallpaper} alt={`Grayscaled and darkened version of ${gameCardData.title} wallpaper`} className={Styles.wallpaperAsBackground}/>
@@ -25,18 +25,24 @@ function GameCard({
                     </div>
                     {readMore ? (<>
                             <p>{`${gameCardData.description}`}</p>
-                            <h4>Genre(s):</h4>
-                            <ul>
-                                {gameCardData.genre.map((genreName, index) => (
-                                    <li key={index}>{genreName}</li>
-                                ))}
-                            </ul>
-                            <h4>Available on:</h4>
-                            <ul>
-                                {gameCardData.platform.map((platformName, index) => (
-                                    <li key={index}>{platformName}</li>
-                                ))}
-                            </ul>
+                            <div className={Styles.genresAndPlatforms}>
+                                <div>
+                                    <h4>Genre(s):</h4>
+                                    <ul>
+                                        {gameCardData.genre.map((genreName, index) => (
+                                            <li key={index}>{genreName}</li>
+                                        ))}
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4>Available on:</h4>
+                                    <ul>
+                                        {gameCardData.platform.map((platformName, index) => (
+                                            <li key={index}>{platformName}</li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            </div>
                             <span className={Styles.closeSpan}><u>Close</u></span>
                         </>) : (<>
                             <p className={Styles.gameDescription}>{`${gameCardData.description.slice(0, 150)}...`}<u>Read more</u></p>

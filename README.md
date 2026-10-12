@@ -164,3 +164,4 @@ With the exception of non-modular SCSS files for advanced SVG:s, Haveyouplayed d
 - Navigation bar influence: [github.com/MidnattLantern/divinesofidoria](https://github.com/MidnattLantern/divinesofidoria)
 - JavaScript `.filter()`: [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
 - JavaScript `.some()`: [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some)
+- CSS Media width: [generalistprogrammer.com/tutorials/css-media-queries-complete-guide](https://generalistprogrammer.com/tutorials/css-media-queries-complete-guide)
