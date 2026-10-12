@@ -1,3 +1,4 @@
+import { useState } from "react"
 import type { IGame } from "../../models"
 import Styles from "./GameCard.module.scss"
 
@@ -6,10 +7,11 @@ function GameCard({
 } : {
     gameCardData: IGame
 }) {
+    const [readMore, setReadMore] = useState<boolean>(false)
 
     return (
         <>
-            <div className={Styles.cardBorder} tabIndex={0}>
+            <div className={`${Styles.cardBorder} ${readMore ? undefined : Styles.cardClosed}`}>
                 <article className={Styles.wrapper}>
                     {gameCardData.wallpaper ? (
                         <img src={gameCardData.wallpaper} alt={`Grayscaled and darkened version of ${gameCardData.title} wallpaper`} className={Styles.wallpaperAsBackground}/>
@@ -21,20 +23,26 @@ function GameCard({
                         <h3 className={Styles.title}>{gameCardData.title}</h3>
                         {gameCardData.logo ? (<img src={gameCardData.logo} alt={`Logo for ${gameCardData.title}`}/>) : undefined}
                     </div>
-                    <p>{gameCardData.description}</p>
-                    <h4>Genre(s):</h4>
-                    <ul>
-                        {gameCardData.genre.map((genreName, index) => (
-                            <li key={index}>{genreName}</li>
-                        ))}
-                    </ul>
-                    <h4>Available on:</h4>
-                    <ul>
-                        {gameCardData.platform.map((platformName, index) => (
-                            <li key={index}>{platformName}</li>
-                        ))}
-                    </ul>
+                    {readMore ? (<>
+                            <p>{`${gameCardData.description}`}</p>
+                            <h4>Genre(s):</h4>
+                            <ul>
+                                {gameCardData.genre.map((genreName, index) => (
+                                    <li key={index}>{genreName}</li>
+                                ))}
+                            </ul>
+                            <h4>Available on:</h4>
+                            <ul>
+                                {gameCardData.platform.map((platformName, index) => (
+                                    <li key={index}>{platformName}</li>
+                                ))}
+                            </ul>
+                            <span className={Styles.closeSpan}><u>Close</u></span>
+                        </>) : (<>
+                            <p className={Styles.gameDescription}>{`${gameCardData.description.slice(0, 150)}...`}<u>Read more</u></p>
+                        </>)}
                 </article>
+                <button className={Styles.setReadMoreButton} onClick={() => {setReadMore(!readMore)}} aria-label="Show or hide detailed information">{readMore ? "Hide" : "Show"}</button>
             </div>
         </>
     )

@@ -1,24 +1,71 @@
 .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: relative;
     padding: 10px;
     border-radius: 20px;
+    height: 100%;
     background-color: var(--color-surface);
 
     h3, h4, p, ul {
         position: relative;
         z-index: 1;
     }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
 }
 
+.setReadMoreButton {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 0;
+    border: none;
+    background: none;
+    z-index: 2;
+    color: var(--color-invisible);
+    cursor: pointer;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+
 .cardBorder {
+    position: relative;
     background-color: var(--color-secondary);
     padding: 10px;
+    transition: all 0.5s ease;
 }
 .cardBorder:hover,
+.cardBorder:focus-within,
 .cardBorder:focus {
     outline: none;
     background-color: var(--color-primary);
     cursor: pointer;
+
+    .closeSpan u,
+    .gameDescription u {
+        color: var(--color-primary);
+    }
+}
+
+.cardClosed {
+    aspect-ratio: 4/5;
 }
 
 .title {
@@ -27,6 +74,9 @@
 }
 
 .titleAndLogo {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -39,9 +89,14 @@
         border-left: 2px dashed var(--color-primary-transparent);
         margin-left: 1rem;
         padding-left: 1rem;
-        position: relative;
         z-index: 1;
     }
+}
+
+.closeSpan u,
+.gameDescription u {
+    margin-left: 0.5rem;
+    font-weight: 600;
 }
 
 .wallpaperAsBackground {
