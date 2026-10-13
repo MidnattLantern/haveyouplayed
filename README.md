@@ -3,6 +3,8 @@ Live link: https://haveyouplayed.vercel.app
 
 Developed by Alma Isaksson 2026
 
+This ReadMe exceeds 400 characters, because most of the documentation is written in great detail to help remember new information better as the developer. For a shorter readme, see the [TLDR readme](tldrReadMe.md)
+
 ## Table of contents
 1. [About](#about)
 2. [Tech stack](#tech-stack)
@@ -135,6 +137,33 @@ function handleApplyPlatformFilters() {
 }
 ```
 In a professional setting, reciever and callback names shouldn't be this long, but I decided to keep them long considering the point of this project (learning & training).
+
+But things become more complicated if you have multiple filters. Haveyouplayed lets you filter by platform, as well as genre. To chain more than one filter, first it's good to understand how a `.filter()`'s callback pass an object. To pass or reject every item in a `.filter()` you could use a function with a boolean return statement:
+```JavaScript
+myLibrary.filter((item) => {return item}) // keep every item
+myLibrary.filter((item) => {return true}) // keep every item
+myLibrary.filter((item) => {return false}) // reject every item
+```
+Since this is now a function, you can create a const for each filter and return them as a chain:
+```JavaScript
+myLibrary.filter((item => {
+    const condition1 = {/* check condition 1 */}
+    const condition2 = {/* check condition 2 */}
+    const condition3 = {/* check condition 3 */}
+
+    return condition1 && condition2 && condition3 // using && will narrow all conditions to one combined
+}))
+```
+Each condition would need to return a boolean as well. A `condition1.some(...)` does as previously mentioned: only keeping the items with passing conditions:
+```JavaScript
+const filteredByPlatform = platformFilters.some(selectedPlatform =>
+    {/* ... */}
+)
+const filteredByGenre = genreFilters.some(selectedGenre =>
+    {/* ... */}
+)
+```
+The only good UX detail left is returning every item when no specified condition is set. The filter useStates should do so when its array is empty. You can make an OR statement at the condition's const, where an empty filter useState means every item pass as `true`, or filter through the `.some()` otherwise. `platformFilters.length === 0` will pass every item since `platformFilters.length === 0` is the same as `true` while the useState array is empty.
 
 # Usestates
 useState being one central part for this project, this deserve its own chapter. The useState:s of Haveyouplayed are:
