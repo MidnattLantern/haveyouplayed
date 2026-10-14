@@ -32,7 +32,7 @@ function NavBar() {
                     </a>
                     <a href='#home-about'>Home & About</a>
                     <a href='#library'>Library</a>
-                    <a href='#suggest'>Suggest</a>
+                    <a href='#contact'>Contact</a>
                 </nav>
             </header>
         </>

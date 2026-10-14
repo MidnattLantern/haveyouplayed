@@ -1,8 +1,8 @@
 // import Styles from './App.module.scss'
+import ContactForm from './components/contactForm/ContactForm'
 import HomeAbout from './components/homeAbout/HomeAbout'
 import Library from './components/library/Library'
 import NavBar from './components/navBar/NavBar'
-import Suggest from './components/suggest/Suggest'
 
 function App() {
 
@@ -16,10 +16,9 @@ function App() {
         <div id='library'>
           <Library/>
         </div>
-        <div id='suggest'>
-          <Suggest/>
+        <div id='contact'>
+          <ContactForm/>
         </div>
-        <button>Click me</button>
       </main>
       <footer>
 

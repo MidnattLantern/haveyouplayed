@@ -1,0 +1,16 @@
+.container {
+    margin: 50px;
+
+    form > label > span::after {
+        content: ":"
+    }
+
+    label {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.pretendNote::before {
+    content: "* ";
+}

@@ -138,23 +138,23 @@ function handleApplyPlatformFilters() {
 ```
 In a professional setting, reciever and callback names shouldn't be this long, but I decided to keep them long considering the point of this project (learning & training).
 
-But things become more complicated if you have multiple filters. Haveyouplayed lets you filter by platform, as well as genre. To chain more than one filter, first it's good to understand how a `.filter()`'s callback pass an object. To pass or reject every item in a `.filter()` you could use a function with a boolean return statement:
+But things become more complicated if you have multiple filters. Haveyouplayed lets you filter by platform, as well as genre. To combine more than one filter, first it's good to understand how a `.filter()`'s callback evaluates an object. To pass or reject every item in a `.filter()` you could use a function with a boolean return statement:
 ```JavaScript
 myLibrary.filter((item) => {return item}) // keep every item
 myLibrary.filter((item) => {return true}) // keep every item
 myLibrary.filter((item) => {return false}) // reject every item
 ```
-Since this is now a function, you can create a const for each filter and return them as a chain:
+Since this is now a function, you can create a const for each filter and return them combined:
 ```JavaScript
-myLibrary.filter((item => {
-    const condition1 = {/* check condition 1 */}
-    const condition2 = {/* check condition 2 */}
-    const condition3 = {/* check condition 3 */}
+myLibrary.filter((item) => {
+    const condition1 = /* check condition 1 */
+    const condition2 = /* check condition 2 */
+    const condition3 = /* check condition 3 */
 
-    return condition1 && condition2 && condition3 // using && will narrow all conditions to one combined
-}))
+    return condition1 && condition2 && condition3 // using && keep items if every condition is true
+})
 ```
-Each condition would need to return a boolean as well. A `condition1.some(...)` does as previously mentioned: only keeping the items with passing conditions:
+Each condition would need to return a boolean as well. A `condition1.some(...)` does as previously mentioned: only keeping the items with truthful conditions:
 ```JavaScript
 const filteredByPlatform = platformFilters.some(selectedPlatform =>
     {/* ... */}
@@ -163,11 +163,14 @@ const filteredByGenre = genreFilters.some(selectedGenre =>
     {/* ... */}
 )
 ```
-The only good UX detail left is returning every item when no specified condition is set. The filter useStates should do so when its array is empty. You can make an OR statement at the condition's const, where an empty filter useState means every item pass as `true`, or filter through the `.some()` otherwise. `platformFilters.length === 0` will pass every item since `platformFilters.length === 0` is the same as `true` while the useState array is empty.
+The only good UX detail left is returning every item when no specified condition is set. The filter useStates should do so when its array is empty. You can make an OR statement at the condition's const, where an empty filter useState means every item evaluates as `true`, or filter through the `.some()` otherwise. `platformFilters.length === 0` will pass every item since `platformFilters.length === 0` is the same as `true` while the useState array is empty.
 
 # Usestates
 useState being one central part for this project, this deserve its own chapter. The useState:s of Haveyouplayed are:
 - Showing and hiding the navigation-bar as a boolean.
+- Showing and hiding more details of a game. Each game card has its own state as a component.
+- One for platform-filters and another for genre-filters.
+- Storing draft for contact form
 
 ## AI disclosure
 I remain committed to distancing myself from AI and LLMs by minimizing my use of them. Claude have been involved strictly for looking up technical information, when traditional video tutorials and reading in forums such as Reddit, Stack Overflow or YouTube tutorials fall short. This includes TypeScript flags or syntax, Vite documentation, grammar check, technical tools jargons, or oddly specific gotchas. However, no code, nor any vector and raster assets were AI generated.
@@ -194,3 +197,4 @@ With the exception of non-modular SCSS files for advanced SVG:s, Haveyouplayed d
 - JavaScript `.filter()`: [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
 - JavaScript `.some()`: [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some)
 - CSS Media width: [generalistprogrammer.com/tutorials/css-media-queries-complete-guide](https://generalistprogrammer.com/tutorials/css-media-queries-complete-guide)
+- Use-state update prev state for objects: [stackoverflow.com/questions](https://stackoverflow.com/questions/55495198/reacts-setstate-method-with-prevstate-argument)

@@ -26,3 +26,11 @@ export type IGame = {
     genre: string[],
     platform: string[]
 }
+
+export type IDraft = {
+    name: string,
+    email: string,
+    phone: string,
+    subject: string,
+    message: string
+}
