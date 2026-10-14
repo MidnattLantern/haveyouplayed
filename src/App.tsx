@@ -21,7 +21,7 @@ function App() {
         </div>
       </main>
       <footer>
-
+        <span>Developed by Alma Isaksson | 2026</span>
       </footer>
     </>
   )

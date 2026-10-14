@@ -171,6 +171,7 @@ useState being one central part for this project, this deserve its own chapter. 
 - Showing and hiding more details of a game. Each game card has its own state as a component.
 - One for platform-filters and another for genre-filters.
 - Storing draft for contact form
+- Storing error messages for each draft field
 
 ## AI disclosure
 I remain committed to distancing myself from AI and LLMs by minimizing my use of them. Claude have been involved strictly for looking up technical information, when traditional video tutorials and reading in forums such as Reddit, Stack Overflow or YouTube tutorials fall short. This includes TypeScript flags or syntax, Vite documentation, grammar check, technical tools jargons, or oddly specific gotchas. However, no code, nor any vector and raster assets were AI generated.

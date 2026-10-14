@@ -1,6 +1,6 @@
 import { useState } from "react"
 import Styles from "./ContactForm.module.scss"
-import type { IDraft } from "../../models"
+import type { IDraft, IDraftError } from "../../models"
 
 function ContactForm() {
 
@@ -12,7 +12,7 @@ function ContactForm() {
         message: ""
     })
 
-    const [draftError, setDraftError] = useState({
+    const [draftError, setDraftError] = useState<IDraftError>({
         name: "",
         email: "",
         phone: "",

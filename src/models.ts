@@ -34,3 +34,5 @@ export type IDraft = {
     subject: string,
     message: string
 }
+
+export type IDraftError = IDraft
