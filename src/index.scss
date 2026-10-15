@@ -64,10 +64,15 @@ footer {
   width: 100%;
   padding-bottom: 100px; // space for open / close navbar
   background-color: var(--color-primary-transparent);
+  gap: 1rem;
 
   span {
     color: var(--color-body);
     text-shadow: 0 2px 2px var(--color-surface);
+  }
+
+  a:hover {
+    color: var(--color-primary);
   }
 }
 
@@ -80,5 +85,6 @@ footer {
 
   footer {
     padding-bottom: 20px;
+    flex-direction: row;
   }
 }

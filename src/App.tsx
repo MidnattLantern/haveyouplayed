@@ -22,6 +22,8 @@ function App() {
       </main>
       <footer>
         <span>Developed by Alma Isaksson | 2026</span>
+        <span>Email: <a href="mailto:MidnattLantern@proton.me" aria-label="developer's email address">MidnattLantern@proton.me</a></span>
+        <span>GitHub: <a href="https://github.com/MidnattLantern" target="_blank">MidnattLantern</a></span>
       </footer>
     </>
   )

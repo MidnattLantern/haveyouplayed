@@ -11,6 +11,10 @@
         &:hover {
             text-decoration: underline;
         }
+
+        &:focus {
+            outline: 2px solid var(--color-surface);
+        }
     }
 
     span {
@@ -62,11 +66,34 @@
     input {
         width: 25px;
         height: 25px;
+        accent-color: var(--color-surface);
     }
 }
 
 .clearFilterButton {
     position: absolute;
+    border-radius: var(--pillify);
+    width: 120px;
+    height: 40px;
+    background-color: var(--color-surface);
+    border: 2px solid var(--color-secondary);
+    font-family: var(--font-theme);
+    font-size: 1.1rem;
+    color: var(--color-secondary);
+
+    &:hover {
+        cursor: pointer;
+        color: var(--color-primary);
+    }
+
+    &:focus {
+        outline: 2px solid var(--color-surface);
+        color: var(--color-primary);
+    }
+
+    &:active {
+        transform: translateY(2px);
+    }
 }
 
 @media screen and (min-width: 1024px) {
