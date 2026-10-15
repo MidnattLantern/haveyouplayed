@@ -40,7 +40,7 @@
         "platform": ["Steam for Windows", "Nintendo Switch", "Xbox One", "PlayStation 4", "PlayStation 5"]
     },
     {
-        "title": "Fire Emblem: Fortume's Weave",
+        "title": "Fire Emblem: Fortune's Weave",
         "description": "Travel through time to gather allies and defeat the demon god Balor. Test your tactical prowess in battle as you guide four heroes on their interwoven journeys from past to present. Together, you'll save the future from ruin—or fall trying. Command your units in strategic turn-based combat against the enemy. Learn the strengths and weaknesses of your units and direct them wisely on the grid-based map, and you just might gain the upper hand.",
         "wallpaper": "wallpapers/fire-emblem-fortunes-weave-wallpaper.webp",
         "logo": "logos/fire-emblem-fortunes-weave-logo.webp",
@@ -141,7 +141,7 @@
         "wallpaper": "wallpapers/reanimal-wallpaper.webp",
         "logo": "logos/reanimal-logo.webp",
         "genre": ["Horror", "3D platformer", "Puzzle", "Adventure"],
-        "platform": ["Steam for Windows", "Xbox Series", "PlayStation 5", "Nintendo Switch2"]
+        "platform": ["Steam for Windows", "Xbox Series", "PlayStation 5", "Nintendo Switch 2"]
     },
     {
         "title": "Grand Theft Auto 6",
