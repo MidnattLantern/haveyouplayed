@@ -83,7 +83,7 @@
         width: 100px;
         height: 100px;
         object-fit: contain;
-        border-left: 2px dashed var(--color-primary-transparent);
+        border-left: 1.5px dashed var(--color-primary-transparent);
         margin-left: 1rem;
         padding-left: 1rem;
         z-index: 1;
@@ -131,6 +131,7 @@
     justify-content: space-between;
     width: 100%;
     margin-top: 15px;
+    border-top: 1.5px dashed var(--color-body-transparent);
 }
 
 @media screen and (min-width: 1280px) {

@@ -27,18 +27,18 @@ function GameCard({
                             <p>{`${gameCardData.description}`}</p>
                             <div className={Styles.genresAndPlatforms}>
                                 <div>
-                                    <h4>Genre(s):</h4>
-                                    <ul>
-                                        {gameCardData.genre.map((genreName, index) => (
-                                            <li key={index}>{genreName}</li>
-                                        ))}
-                                    </ul>
-                                </div>
-                                <div>
                                     <h4>Available on:</h4>
                                     <ul>
                                         {gameCardData.platform.map((platformName, index) => (
                                             <li key={index}>{platformName}</li>
+                                        ))}
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4>Genre(s):</h4>
+                                    <ul>
+                                        {gameCardData.genre.map((genreName, index) => (
+                                            <li key={index}>{genreName}</li>
                                         ))}
                                     </ul>
                                 </div>
