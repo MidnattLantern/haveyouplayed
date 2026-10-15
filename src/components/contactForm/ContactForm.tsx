@@ -108,7 +108,7 @@ function ContactForm() {
         <>
             <h2>Contact</h2>
             <div className={Styles.container}>
-                <p>Know a title you think would belong here, or just want to get in touch?<br/>Leave your suggestion below:</p>
+                <p className={Styles.subtitle}>Know a title you think would belong here, or just want to get in touch?<br/>Leave your suggestion below:</p>
                 <p className={Styles.pretendNote}>This is a pretend form as proof of concept, no information will be shared and all information will be forgotten.</p>
                 {displayConcern === "contact" ? (
                     <form onSubmit={handleSubmit} noValidate>
@@ -150,13 +150,13 @@ function ContactForm() {
                         <input type="submit" value="Submit"/>
                     </form>
                 ) : (
-                    <div>
-                        <p>Thank you for your message!</p>
-                        <p>Name: {draft.name}</p>
-                        <p>Email: {draft.email}</p>
-                        <p>Phone: {draft.phone}</p>
-                        <p>Subject: {draft.subject}</p>
-                        <p>Message: {draft.message}</p>
+                    <div className={Styles.confirmationWrapper}>
+                        <p className={Styles.thankYouMessage}>Thank you for your message!</p>
+                        <p><span>Name:</span><span>{draft.name}</span></p>
+                        <p><span>Email:</span><span>{draft.email}</span></p>
+                        <p><span>Phone:</span><span>{draft.phone}</span></p>
+                        <p><span>Subject:</span><span>{draft.subject}</span></p>
+                        <p><span>Message:</span><span>{draft.message}</span></p>
                     </div>
                 )}
 
