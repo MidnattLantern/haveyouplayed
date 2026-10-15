@@ -20,14 +20,14 @@ function NavBar() {
             <header className={`${Styles.container} ${showNavBar ? undefined : Styles.containerNoEvents}`} onClick={showNavBar ? handleHideNavBar : undefined}>
                 <button onClick={handleToggleShowNavBar} className={`${Styles.toggleNavBarButton} ${showNavBar ? Styles.expandedNavBarButton : ""}`}>
                     <h1>
-                        <Logo aria-label="Have you played logo" className={Styles.logoColor}/>
+                        <Logo aria-label="Have you played logo" className={Styles.logoAppearance}/>
                         <span className={Styles.logoA11y}>Have you played</span>
                     </h1>
                     <RoundArrow className={`${Styles.roundArrow} ${showNavBar ? Styles.roundArrowLeft : ""}`}/>
                 </button>
                 <nav className={showNavBar ? Styles.navIsVisible : Styles.navIsHidden}>
-                    <a href='#' className={Styles.logoWideVP}>
-                        <Logo aria-label='Have you played logo' className={Styles.logoColor}/>
+                    <a href='#' className={Styles.logoWideViewPort}>
+                        <Logo aria-label='Have you played logo' className={Styles.logoAppearance}/>
                         <span className={Styles.logoA11y}>Have you played</span>
                     </a>
                     <a href='#home-about'>Home & About</a>

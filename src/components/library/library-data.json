@@ -156,7 +156,7 @@
         "description": "Neon White is a lightning fast first-person action game where you exterminate demons beyond the pearly gates. Collect Soul Cards to attack your foes or discard them to use unique movement abilities. Compete for the best times by cleverly combining cards to discover massive shortcuts. Uncover Heaven's mysteries by getting to know the other assassins… did you know them in a past life?",
         "wallpaper": "wallpapers/neon-white-wallpaper.webp",
         "logo": "logos/neon-white-logo.webp",
-        "genre": ["Action", "Shooter"],
+        "genre": ["Action", "Shooter", "3D platformer"],
         "platform": ["Steam for Windows", "Nintendo Switch"]
     }
 ]

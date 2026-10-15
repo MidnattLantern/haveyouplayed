@@ -1,4 +1,4 @@
-import './banner.scss' // non-modular SCSS are strictly exclusive for more complex SVG:s only
+import './banner.scss' // non-modular SCSS are exclusive for complex SVG:s
 import Styles from './HomeAbout.module.scss'
 import Banner from '../../assets/haveyouplayed-banner.svg?react'
 

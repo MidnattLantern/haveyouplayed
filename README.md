@@ -56,7 +56,14 @@ NOTE: Changes from initial wireframe to final product may vary. This project doe
 The architecture takes advantage of React's component-based JSX features.
 
 ### SCSS modules
-By utulizing .module for scss documents, each component and its class-names can be truly unique, meaning multiple components could have ".container" without overlapping each other. Note that .module files shouldn't use element selectors, such as "span" or "article", use class-names instead. Universal element selectors and variables should be specified in index.scss. Colors and fonts should always use variables going back to index.scss.
+By utulizing .module for scss documents, each component and its class-names can be truly unique, meaning multiple components could have ".container" without overlapping each other. Note that .module files shouldn't use element selectors, such as "span" or "article" unless they're nested in a class, use class-names instead. Universal element selectors and variables should be specified in index.scss. Colors and fonts should use variables going back to index.scss. This makes it easy to edit the overall layout while maintaining a coherent layout by editing one line of code instead of digging through every scss file.
+
+### CSS conventions
+Some rules cannot be enforced with a `var()` so these must be manually written:
+- Narrow: 768px
+- Medium: 1024px
+- Wide: 1280px
+- text-shadow: 0 2px 2px var(--color-surface)
 
 ### SCSS for SVG
 The SCSS module convention does not apply for targeting some complex SVG:s. Using modular SCSS are usually convenient and doable when the entire SVG asset is targeted, but becomes complicated if the SVG use for instance more than one non-hard-coded color. Targeting and assigning modular id:s doesn't work the same way in a JSX-file as for an XML-file, therefore, this exception exist to allow targeting multiple elements within more complex SVG:s. A non-modular-SCSS file may exist to correspond an SVG and target SVG:s id:s or classNames. Keep in mind when working with these rules to be cautious when naming id:s inside SVG:s so that multiple SCSS files and targetId:s does not overlap each other.
@@ -187,7 +194,7 @@ React read SVG:s a little differently from a vanilla Vite project. You need the 
  I don't know the techincal details, but to prevent SVG:s from crashing your app, simply add `?react` to the end of your import: `import logo from './logo.svg?react'`.
 
 ### Modular SCSS as choice of styling
-With the exception of non-modular SCSS files for advanced SVG:s, Haveyouplayed does evey styling from scratch, including transitional animations. Tools like Tailwind or Bootstrap strip away one of the most fun parts of front-end development. And doing things from the ground up offers more control and freedom. SCSS makes style-sheets more convenient to work with, such as single line comments (two slashes instead of slash-asterisk-asterisk-slash) or nested queries. The tradeoff is that doing styling from scratch may end you up with long and messy style-sheets that are hard to read and follow. Things may also become even more complicated when you mix modular and non-modular style-sheets (see [SCSS for SVG](#scss-for-svg)).
+With the exception of non-modular SCSS files for advanced SVG:s, Haveyouplayed does evey styling from scratch, including transitional animations. Tools like Tailwind or Bootstrap strip away one of the most fun parts of front-end development. Doing things from the ground up offers more control and freedom. SCSS makes style-sheets more convenient to work with, such as single line comments (two slashes instead of slash-asterisk-asterisk-slash) or nested queries. The tradeoff is that doing styling from scratch may end you up with long and messy style-sheets that are hard to read and follow, especially when debating whether to avoid repeating rules while nesting unrelated elements who share the same rules. Other times, nesting a rule in a clean place could mysteriously break animations. Things may also become even more complicated when you mix modular and non-modular style-sheets (see [SCSS for SVG](#scss-for-svg)).
 
 ## Acknowledgements and helpful resources
 - How to deploy to Vercel: [vercel.com/kb/guide/deploying-react-with-vercel](https://vercel.com/kb/guide/deploying-react-with-vercel)
