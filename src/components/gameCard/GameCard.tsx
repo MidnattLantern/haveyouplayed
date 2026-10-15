@@ -11,8 +11,8 @@ function GameCard({
 
     return (
         <>
-            <div className={`${Styles.cardBorder}`}>
-                <article className={Styles.wrapper}>
+            <div className={`${Styles.container}`}>
+                <article className={Styles.gameCardContainer}>
                     {gameCardData.wallpaper ? (
                         <img src={gameCardData.wallpaper} alt={`Grayscaled and darkened version of ${gameCardData.title} wallpaper`} className={Styles.wallpaperAsBackground}/>
                     ) : undefined}
@@ -48,7 +48,7 @@ function GameCard({
                             <p className={Styles.gameDescription}>{`${gameCardData.description.slice(0, 150)}...`}<u>Read more</u></p>
                         </>)}
                 </article>
-                <button className={Styles.setReadMoreButton} onClick={() => {setReadMore(!readMore)}} aria-label="Show or hide detailed information">{readMore ? "Hide" : "Show"}</button>
+                <button className={Styles.readMoreButton} onClick={() => {setReadMore(!readMore)}} aria-label="Show or hide detailed information">{readMore ? "Hide" : "Show"}</button>
             </div>
         </>
     )

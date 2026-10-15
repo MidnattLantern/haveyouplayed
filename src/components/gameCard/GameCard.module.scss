@@ -1,4 +1,23 @@
-.wrapper {
+.container {
+    position: relative;
+    background-color: var(--color-secondary);
+    padding: calc(var(--common-gap) - 5px);
+    transition: all 0.5s ease;
+}
+.container:hover,
+.container:focus-within,
+.container:focus {
+    outline: none;
+    background-color: var(--color-primary);
+    cursor: pointer;
+
+    .closeSpan u,
+    .gameDescription u {
+        color: var(--color-primary);
+    }
+}
+
+.gameCardContainer {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -11,23 +30,15 @@
     h3, h4, p, ul {
         position: relative;
         z-index: 1;
-        text-shadow: 0 3px 1px var(--color-surface);
+        text-shadow: 0 2px 2px var(--color-surface);
     }
 
     h3 {
         font-size: 1.2rem;
     }
-
-    h2 {
-        font-size: 1rem;
-    }
-
-    p {
-        font-size: 1rem;
-    }
 }
 
-.setReadMoreButton {
+.readMoreButton {
     position: absolute;
     top: 0;
     left: 0;
@@ -45,30 +56,6 @@
     }
 }
 
-.cardBorder {
-    position: relative;
-    background-color: var(--color-secondary);
-    padding: calc(var(--common-gap) - 5px);
-    transition: all 0.5s ease;
-}
-.cardBorder:hover,
-.cardBorder:focus-within,
-.cardBorder:focus {
-    outline: none;
-    background-color: var(--color-primary);
-    cursor: pointer;
-
-    .closeSpan u,
-    .gameDescription u {
-        color: var(--color-primary);
-    }
-}
-
-.title {
-    color: var(--color-primary);
-    text-transform: uppercase;
-}
-
 .titleAndLogo {
     display: flex;
     flex-direction: row;
@@ -78,7 +65,12 @@
     padding-top: var(--common-gap);
     padding-bottom: var(--common-gap);
 
-    img {
+    .title {
+        color: var(--color-primary);
+        text-transform: uppercase;
+    }
+
+    img { // logo
         width: 100px;
         height: 100px;
         object-fit: contain;
@@ -89,20 +81,19 @@
     }
 }
 
+.closeSpan {
+    position: absolute;
+    bottom: 5px;
+    text-shadow: 0 2px 2px var(--color-surface);
+}
+
 .closeSpan u,
 .gameDescription u {
     margin-left: 0.5rem;
     font-weight: 600;
 }
 
-.closeSpan {
-    position: absolute;
-    bottom: 5px;
-    text-shadow: 0 5px 5px var(--color-surface);
-}
-
 .wallpaperAsBackground {
-    box-sizing: border-box;
     position: absolute;
     top: 0;
     left: 0;
@@ -129,12 +120,13 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    margin-top: 15px;
+    margin-top: var(--common-gap);
+    padding-top: var(--common-gap);
     border-top: 1.5px dashed var(--color-body-transparent);
 }
 
 @media screen and (min-width: 1280px) {
-    .wrapper {
+    .gameCardContainer {
         h3 {
             font-size: 2rem;
         }

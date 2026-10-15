@@ -3,7 +3,7 @@ Live link: https://haveyouplayed.vercel.app
 
 Developed by Alma Isaksson 2026
 
-This ReadMe exceeds 400 characters, because most of the documentation is written in great detail to help remember new information better as the developer. For a shorter readme, see the [TLDR readme](tldrReadMe.md)
+This readme exceeds 400 words. Most of the documentation is written in great detail to help remember new information better as the developer. For a shorter readme, see the [TLDR readme](tldrReadme.md) version.
 
 ## Table of contents
 1. [About](#about)
@@ -197,7 +197,7 @@ React read SVG:s a little differently from a vanilla Vite project. You need the 
 With the exception of non-modular SCSS files for advanced SVG:s, Haveyouplayed does evey styling from scratch, including transitional animations. Tools like Tailwind or Bootstrap strip away one of the most fun parts of front-end development. Doing things from the ground up offers more control and freedom. SCSS makes style-sheets more convenient to work with, such as single line comments (two slashes instead of slash-asterisk-asterisk-slash) or nested queries. The tradeoff is that doing styling from scratch may end you up with long and messy style-sheets that are hard to read and follow, especially when debating whether to avoid repeating rules while nesting unrelated elements who share the same rules. Other times, nesting a rule in a clean place could mysteriously break animations. Things may also become even more complicated when you mix modular and non-modular style-sheets (see [SCSS for SVG](#scss-for-svg)).
 
 ### Concentric border radius
-If you change the value of `--common-gap` in index.scss, then carefully look at the corners of a game card, you'll see no matter what value for `--common-gap` the curves will always be smooth and coherent. This is one argument why Haveyouplayed should rely on calculations and variables with the gaps of many elements.
+If you change the value of `--common-gap` in index.scss, then carefully look at the corners of a game card, you'll see no matter what value for `--common-gap` you set, the curves will always be smooth and coherent. The corners are [concentric](https://unlimited.studio/en/blog/craft/concentric-border-radius). This is one argument why Haveyouplayed should rely on calculations and variables with the gaps of many elements.
 
 ## Acknowledgements and helpful resources
 - How to deploy to Vercel: [vercel.com/kb/guide/deploying-react-with-vercel](https://vercel.com/kb/guide/deploying-react-with-vercel)
@@ -209,3 +209,4 @@ If you change the value of `--common-gap` in index.scss, then carefully look at 
 - JavaScript `.some()`: [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some)
 - CSS Media width: [generalistprogrammer.com/tutorials/css-media-queries-complete-guide](https://generalistprogrammer.com/tutorials/css-media-queries-complete-guide)
 - Use-state update prev state for objects: [stackoverflow.com/questions](https://stackoverflow.com/questions/55495198/reacts-setstate-method-with-prevstate-argument)
+- What does "concentric border radius" mean? [unlimited.studio/en/blog/craft/concentric-border-radius](https://unlimited.studio/en/blog/craft/concentric-border-radius)

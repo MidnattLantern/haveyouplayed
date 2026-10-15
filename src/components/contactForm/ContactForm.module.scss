@@ -1,13 +1,12 @@
 .container {
-    margin: 20px;
-    margin-bottom: 100px;
+    margin: var(--common-gap);
     text-align: center;
 
     form {
         display: flex;
         flex-direction: column;
-        margin-top: 1rem;
-        gap: 1rem;
+        margin-top: var(--common-text-gap);
+        gap: var(--common-text-gap);
     }
 
     label {
@@ -16,7 +15,7 @@
     }
 
     textarea {
-        border-radius: 15px;
+        border-radius: var(--common-gap);
         border-bottom-right-radius: 0;
     }
 
@@ -28,8 +27,8 @@
     textarea,
     input {
         width: auto;
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding-left: var(--common-text-gap);
+        padding-right: var(--common-text-gap);
         background-color: var(--color-invisible);
         border: 1px solid var(--color-primary);
         color: var(--color-body);
@@ -66,16 +65,8 @@
     }
 }
 
-.inputLabel::after {
-    content: ":"
-}
-
 .subtitle {
     font-size: 1.8rem;
-}
-
-.pretendNote {
-    font-size: 1.0rem;
 }
 
 .pretendNote::before {
@@ -87,23 +78,27 @@
     flex-direction: row;
 }
 
+.inputLabel::after {
+    content: ":"
+}
+
 .inputAlert {
-    margin-left: 1rem;
+    margin-left: var(--common-text-gap);
     color: var(--color-alert);
 }
 
 .confirmationWrapper {
-    margin-top: 20px;
+    margin-top: var(--common-gap);
 
     p {
         display: flex;
         justify-content: space-between;
-        margin: 1rem;
+        margin: var(--common-text-gap);
         border-bottom: 1px dotted var(--color-body-transparent);
     }
 
     .thankYouMessage {
         justify-content: center;
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
 }
