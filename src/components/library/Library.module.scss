@@ -1,11 +1,13 @@
 .filterContainer {
-    margin: 15px;
-    padding: 15px;
+    position: relative;
+    margin: var(--common-gap);
+    padding: var(--common-gap);
     background-color: var(--color-secondary);
 
     summary {
         font-size: 1.5rem;
         color: var(--color-surface);
+        height: var(--filter-summary-height);
         cursor: pointer;
 
         &:hover {
@@ -17,23 +19,16 @@
         }
     }
 
-    span {
+    span, h3 {
         color: var(--color-surface);
         font-weight: 600;
-        font-size: 1.1rem;
-
-        &:hover {
-            cursor: pointer;
-        }
     }
 
-    input[type="checkbox"]:hover {
-        cursor: pointer;
+    span {
+        font-size: 1.1rem;
     }
 
     h3 {
-        color: var(--color-surface);
-        font-weight: 800;
         font-size: 2.0rem;
     }
 }
@@ -41,8 +36,8 @@
 .libraryContainer {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    margin: 15px;
+    gap: var(--common-gap);
+    margin: var(--common-gap);
 }
 
 .filterOptionsWrapper {
@@ -52,34 +47,35 @@
     section {
         display: flex;
         flex-direction: column;
-        margin-top: 20px;
+        margin-top: calc(var(--filter-summary-height) + var(--common-gap));
+        gap: var(--common-gap);
     }
 
     label {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-left: 20px;
-        padding-right: 20px;
-        height: 50px;
+        padding-left: var(--common-gap);
+        padding-right: var(--common-gap);
     }
+
     input {
-        width: 25px;
-        height: 25px;
         accent-color: var(--color-surface);
     }
 }
 
 .clearFilterButton {
     position: absolute;
+    top: calc(var(--filter-summary-height) + (var(--common-gap) * 2));
+    padding: 5px;
+    padding-left: var(--common-gap);
+    padding-right: var(--common-gap);
     border-radius: var(--pillify);
-    width: 120px;
-    height: 40px;
     background-color: var(--color-surface);
     border: 2px solid var(--color-secondary);
     font-family: var(--font-theme);
     font-size: 1.1rem;
-    color: var(--color-secondary);
+    color: var(--color-pure-white);
 
     &:hover {
         cursor: pointer;
@@ -109,7 +105,7 @@
         section {
             display: flex;
             width: 100%;
-            padding: 25px;
+            padding: var(--common-gap);
         }
     }
 }
