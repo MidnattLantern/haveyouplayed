@@ -3,7 +3,7 @@ Live link: https://haveyouplayed.vercel.app
 
 Developed by Alma Isaksson 2026
 
-This readme exceeds 400 words. Most of the documentation is written in great detail to help remember new information better as the developer. For a shorter readme, see the [TLDR readme](tldrReadme.md) version.
+This readme is very ling. Most of the documentation is written in great detail to help remember new information better as the developer. For a shorter readme, see the [TLDR readme](tldrReadMe.md) version.
 
 ## Table of contents
 1. [About](#about)
