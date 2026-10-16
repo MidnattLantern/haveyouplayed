@@ -1,15 +1,27 @@
 // non-modular SCSS are exclusive for complex SVG:s
 
+@keyframes primary-slide-in {
+    from {transform: translateX(20%);}
+    to {transform: translateX(0);}
+}
+
+@keyframes secondary-slide-in {
+    from {transform: translateX(-20%);}
+    to {transform: translateX(0);}
+}
+
 #bannerBody {
     fill: var(--color-pure-white);
 }
 
 #bannerPrimary {
     fill: var(--color-primary);
+    animation: primary-slide-in 20s ease-out;
 }
 
 #bannerSecondary {
-    fill: var(--color-secondary)
+    fill: var(--color-secondary);
+    animation: secondary-slide-in 20s ease-out;
 }
 
 #bannerText {

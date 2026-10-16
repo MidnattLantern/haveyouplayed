@@ -41,7 +41,7 @@ Prerequisites that your github is linked to your Vercel's team and that the code
 ## Wireframes
 Wireframes were done through Figma: [www.figma.com/design (haveyouplayed)](https://www.figma.com/design/PV0j8Asx3JjxLCcvLFy2mr/Untitled?node-id=0-1&t=xQby5OZztakyctIW-1)
 
-NOTE: Changes from initial wireframe to final product may vary. This project does not make an orthodox commitment.
+Changes from initial wireframe to final product may vary. Precise dimensions or optional features could be too early to know during initial sketch, discovering better decisions during development, or discarded (for optional content) as there's not enough time.
 
 ## Codebase architecture
 - [Components](#components)
@@ -177,8 +177,8 @@ useState being one central part for this project, this deserve its own chapter. 
 - Showing and hiding the navigation-bar as a boolean.
 - Showing and hiding more details of a game. Each game card has its own state as a component.
 - One for platform-filters and another for genre-filters.
-- Storing draft for contact form
-- Storing error messages for each draft field
+- Storing draft for contact form.
+- Storing error messages for each draft field.
 
 ## AI disclosure
 I remain committed to distancing myself from AI and LLMs by minimizing my use of them. Claude have been involved strictly for looking up technical information, when traditional video tutorials and reading in forums such as Reddit, Stack Overflow or YouTube tutorials fall short. This includes TypeScript flags or syntax, Vite documentation, grammar check, technical tools jargons, or oddly specific gotchas. However, no code, nor any vector and raster assets were AI generated.

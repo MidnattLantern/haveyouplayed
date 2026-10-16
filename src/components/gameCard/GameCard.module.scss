@@ -82,9 +82,8 @@
 }
 
 .closeSpan {
-    position: absolute;
-    bottom: 5px;
     text-shadow: 0 2px 2px var(--color-surface);
+    margin: var(--common-gap);
 }
 
 .closeSpan u,

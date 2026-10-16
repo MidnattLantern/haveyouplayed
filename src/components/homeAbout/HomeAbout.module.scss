@@ -1,3 +1,8 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
 .aboutParagraph {
     padding: 1rem;
     margin-top: 1rem;
